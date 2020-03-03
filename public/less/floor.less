@@ -1,0 +1,321 @@
+//***************************************base values********************************************************/
+@p-btn-color: #0aa1ed;//本网站的经典蓝
+@bg-color: #f5f5f5 ;//背景灰
+
+//*******************************base styles ******************************************************/
+
+.floor-base(){//每个楼层的基本样式
+    margin-top: 20px;
+    margin-left: 10px;
+    img {
+        transition: all .5s linear;
+    }
+}
+
+.floor-b(){//每个楼层中标签B的基本样式
+    font-size: 20px;
+    margin-left: 20px;
+    color: #777;
+}
+ 
+.detail-btn(@h, @w){//详情按钮的基本样式
+    width: @w;
+    height: @h;
+    background-color: @p-btn-color;
+    border-radius: 2px;
+    text-align: center;
+    line-height: @h;
+}
+
+.p-price(@font){//价格样式
+    color: @p-btn-color;
+    font-size: @font;
+
+}
+
+.img-scale(@mult){//图片的鼠标悬停放大效果
+    transform: scale(@mult);
+}
+
+/*****************************s导航条的样式******************************************/
+
+div.nav {
+    width: 1000px;
+    margin: 0 auto;
+    >div:first-child {
+        >ul {
+            >li>a {
+                font-weight: bold;
+                color: #ccc;
+                font-size: 14px;
+                margin-left: 18px;
+            &:hover {
+                    color: #b8b8b8;
+                }
+            }
+        }
+    }
+}
+/*****************************F1F1F1***********************************************/
+div.first-floor{
+    .floor-base();//基础样式
+    >div:first-child{
+        margin-top: 30px;
+        margin-left: 10px;
+        width: 1100px;
+        border-bottom: 2px solid #d9d9d9;
+        b {.floor-b()}
+    }
+
+    >div.first-floor1{
+        margin-top: 10px;
+        >div.left{
+            background-color: #e8e8e8;
+            width: 620px;
+            height: 376px;
+            >div:first-child{
+                position: absolute;
+                top: 50px;
+                left: 40px;
+                width: 255px;
+                >p.title {
+                    font-size: 32px;
+                    font-weight: lighter;
+                    color: #000;
+                }
+                >p.detail-btn{
+                    .detail-btn(40px, 134px);
+                    >a{
+                        color: #fff;
+                    }
+                }
+                >P.price{
+                    .p-price(20px)
+                }
+                
+            }
+            >span>img{
+                margin-left: 150px;
+                margin-top: 40px;
+                &:hover{
+                    .img-scale(1.1)
+                }
+            }
+        }
+        >div.right{
+            margin-left: 40px;
+            background-color: #e8e8e8;
+            width:;
+            height: 376px;
+            div:first-child{
+                width: 255px;
+                position: absolute;
+                top: 50px;
+                left: 30px;
+                >p.title{
+                    font-size: 30px;
+                    font-weight: lighter;
+                }
+                >p.detail-btn {
+                    .detail-btn(40px, 134px);
+                    >a{
+                        color: #fff;
+                    }
+                }
+                >P.price {
+                    .p-price(20px)
+                }
+            }
+            img{
+                margin-top: 60px;
+                margin-left: 140px;
+                &:hover{
+                    .img-scale(1.1)
+                }
+            }
+        }
+    }
+
+    >div.first-floor2{
+        margin-top: 20px;
+        >div {
+            background-color: #e8e8e8;
+            height: 300px;
+            &:not(:first-child) {
+                margin-left: 16px;
+                width: 235px;
+            }
+            span>img {
+                display: inline-block;
+                margin-left: auto;
+                &:hover{
+                    .img-scale(1.05)
+                }
+            }
+            p{
+                text-align: center;
+                margin:10px auto;
+                 &:last-child{
+                    .detail-btn(24px, 100px)
+                }  
+                >a{
+                    color: #fff;
+                }
+                &.price{
+                    .p-price(15px)
+                }
+            }
+        }
+    }
+    
+}
+
+
+/********************F2F2F2**************************************************************/
+div.second-floor {
+    .floor-base(); //基础样式
+
+    >div:first-child {
+        margin-top: 30px;
+        margin-left: 10px;
+        width: 1100px;
+        border-bottom: 2px solid #d9d9d9;
+
+        b {
+            .floor-b()
+        }
+    }
+
+    >div.first-floor1 {
+        margin-top: 10px;
+
+        >div.left {
+            background-color: #e8e8e8;
+            width: 620px;
+            height: 376px;
+
+            >div:first-child {
+                position: absolute;
+                top: 50px;
+                left: 40px;
+                width: 255px;
+
+                >p.title {
+                    font-size: 32px;
+                    font-weight: lighter;
+                    color: #000;
+                }
+
+                >p.detail-btn {
+                    .detail-btn(40px, 134px);
+
+                    >a {
+                        color: #fff;
+                    }
+                }
+
+                >P.price {
+                    .p-price(20px)
+                }
+
+            }
+
+            >span>img {
+                margin-left: 150px;
+                margin-top: 40px;
+
+                &:hover {
+                    .img-scale(1.1)
+                }
+            }
+        }
+
+        >div.right {
+            margin-left: 40px;
+            background-color: #e8e8e8;
+            width: ;
+            height: 376px;
+
+            div:first-child {
+                width: 255px;
+                position: absolute;
+                top: 50px;
+                left: 30px;
+
+                >p.title {
+                    font-size: 30px;
+                    font-weight: lighter;
+                }
+
+                >p.detail-btn {
+                    .detail-btn(40px, 134px);
+
+                    >a {
+                        color: #fff;
+                    }
+                }
+
+                >P.price {
+                    .p-price(20px)
+                }
+            }
+
+            img {
+                margin-top: 60px;
+                margin-left: 140px;
+
+                &:hover {
+                    .img-scale(1.1)
+                }
+            }
+        }
+    }
+
+    >div.first-floor2 {
+        margin-top: 20px;
+
+        >div {
+            background-color: #e8e8e8;
+            height: 300px;
+
+            &:not(:first-child) {
+                margin-left: 16px;
+                width: 235px;
+            }
+
+            span>img {
+                display: inline-block;
+                margin-left: auto;
+
+                &:hover {
+                    .img-scale(1.05)
+                }
+            }
+
+            p {
+                text-align: center;
+                margin: 10px auto;
+
+                &:last-child {
+                    .detail-btn(24px, 100px)
+                }
+
+                >a {
+                    color: #fff;
+                }
+
+                &.price {
+                    .p-price(15px)
+                }
+            }
+        }
+    }
+
+}
+
+div.third-floor {
+    .floor-base();
+    b {
+        .floor-b()
+    }
+}

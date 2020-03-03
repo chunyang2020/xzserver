@@ -1,0 +1,91 @@
+/**************************************nav***********************************************/
+/************************************banner***********************************************/
+div.banner > div > div.banner-box {
+  margin-top: 20px;
+  margin-left: 80px;
+  overflow: hidden;
+  position: relative;
+  width: 1000px;
+  height: 400px;
+}
+div.banner > div > div.banner-box::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+div.banner > div > div.banner-box > img.banner-img1 {
+  display: none;
+  transition: all 0.5s linear;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+div.banner > div > div.banner-box > img.banner-img2 {
+  transition: all 0.5s linear;
+  position: absolute;
+  top: 0;
+  left: 1000px;
+}
+div.banner > div > div.banner-box > img.banner-img3 {
+  transition: all 0.5s linear;
+  position: absolute;
+  top: 0;
+  left: 2000px;
+}
+div.banner > div > div.banner-box > img.banner-img4 {
+  transition: all 0.5s linear;
+  position: absolute;
+  top: 0;
+  left: 3000px;
+}
+div.banner > div > div.banner-box > img.banner-img5 {
+  transition: all 0.5s linear;
+  position: absolute;
+  top: 0;
+  left: 4000px;
+}
+div.banner > div > div.banner-box > div.arrow-left {
+  width: 16px;
+  height: 35px;
+  background-color: #e0e0e0;
+  position: absolute;
+  top: 195px;
+  left: 5px;
+}
+div.banner > div > div.banner-box > div.arrow-left:hover {
+  background-color: #b8b8b8;
+}
+div.banner > div > div.banner-box > div.arrow-left > img.banner-img6 {
+  margin-left: 2px;
+  margin-top: 8px;
+}
+div.banner > div > div.banner-box > div.arrow-right {
+  width: 16px;
+  height: 35px;
+  background-color: #e0e0e0;
+  position: absolute;
+  top: 195px;
+  right: 5px;
+}
+div.banner > div > div.banner-box > div.arrow-right:hover {
+  background-color: #b8b8b8;
+}
+div.banner > div > div.banner-box > div.arrow-right > img.banner-img7 {
+  margin-left: 2px;
+  margin-top: 8px;
+}
+div.banner > div > div.banner-box > ul.banner-circle {
+  position: absolute;
+  top: 380px;
+  left: 470px;
+}
+div.banner > div > div.banner-box > ul.banner-circle > li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 3px;
+  background-color: #fff;
+}
+div.banner > div > div.banner-box > ul.banner-circle > li:hover {
+  background-color: #0269c2;
+}

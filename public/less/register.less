@@ -1,0 +1,100 @@
+div.container{
+    width: 100%;
+    background-color: #f5f5f5;
+    div.header{
+        width: 100%;
+        height: 100px;
+        &::before{
+            content: "";
+            display: table;
+        }
+
+        >a{
+            display: block;
+            margin-top: 20px;
+            margin-left: 200px;
+            text-decoration: none;
+            color: #222;
+            >img{
+                display: inline-block;
+                margin-top: 0px;
+                vertical-align: middle;
+            }
+            >span {
+                display: inline-block;
+                margin-left: 30px;
+                line-height: 100%;
+                font-size: 20px;
+                
+            }
+        }
+    }
+
+    div.content {
+        position: relative;
+        width: 100%;
+        div.register-png {
+            width: 100%;
+            height: 560px;
+            background-image: url("../img/register/bg.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        div.register-table {
+            width: 590px;
+            height: 465px;
+            background-color:rgba(2, 2, 2, 0.3);
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            border-radius: 2px;
+            >p{
+                color: #fff;
+                font-size: 20px;
+                font-weight: bold;
+                margin-left: 50px;
+                span{
+                    margin-left: 160px;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 14px;
+                        font-weight: lighter;
+                    }
+                }
+            
+            }
+            div.form-input{
+                color: #fff;
+                height: 40px;
+                width: 580px;
+                margin: 30px auto;
+                label{
+                    display: inline-block;
+                    width: 350px;
+                    text-align: right;
+                    >input {
+                        width: 240px;
+                        height: 34px;
+                        background-color: #fff;
+                        color: #333;
+                        margin-left: 5px;
+                    }
+                }
+                span{
+                    color:red;
+                    font-size: 12px;
+                }
+            }
+            input.submit {
+                background-color: #27b0f6;
+                color: #fff;
+                width: 200px;
+                height: 30px;
+                margin-left: 200px;
+                border: 0;
+            }
+            
+        }
+    }
+}

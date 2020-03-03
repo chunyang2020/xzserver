@@ -1,0 +1,325 @@
+.modal {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.lf {
+  float: left;
+}
+.rg {
+  float: right;
+}
+div.container {
+  width: 1000px;
+  margin: 5px auto;
+}
+div.container div.modal_dele_hint,
+div.container div.modal_insert_hint,
+div.container div.modal_dele_sele,
+div.container div.modal_insert_sele {
+  width: 100%;
+  display: none;
+}
+div.container div.modal_dele_hint div.dialog,
+div.container div.modal_insert_hint div.dialog,
+div.container div.modal_dele_sele div.dialog,
+div.container div.modal_insert_sele div.dialog {
+  width: 400px;
+  height: 200px;
+  border-radius: 5px;
+  margin: 200px auto;
+  background-color: #f5f5f5;
+}
+div.container div.modal_dele_hint div.dialog div:first-child,
+div.container div.modal_insert_hint div.dialog div:first-child,
+div.container div.modal_dele_sele div.dialog div:first-child,
+div.container div.modal_insert_sele div.dialog div:first-child {
+  width: 100%;
+  height: 50px;
+  background-color: #e8e8e8;
+  box-shadow: 2px 2px 3px #666;
+  padding-left: 10px;
+  line-height: 50px;
+}
+div.container div.modal_dele_hint div.dialog div:first-child span,
+div.container div.modal_insert_hint div.dialog div:first-child span,
+div.container div.modal_dele_sele div.dialog div:first-child span,
+div.container div.modal_insert_sele div.dialog div:first-child span {
+  font-size: 18px;
+}
+div.container div.modal_dele_hint div.dialog div:nth-child(2),
+div.container div.modal_insert_hint div.dialog div:nth-child(2),
+div.container div.modal_dele_sele div.dialog div:nth-child(2),
+div.container div.modal_insert_sele div.dialog div:nth-child(2) {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+div.container div.modal_dele_hint div.dialog div:last-child,
+div.container div.modal_insert_hint div.dialog div:last-child,
+div.container div.modal_dele_sele div.dialog div:last-child,
+div.container div.modal_insert_sele div.dialog div:last-child {
+  width: 200px;
+  height: 70px;
+  margin: 0 auto;
+}
+div.container div.modal_dele_hint div.dialog div:last-child span,
+div.container div.modal_insert_hint div.dialog div:last-child span,
+div.container div.modal_dele_sele div.dialog div:last-child span,
+div.container div.modal_insert_sele div.dialog div:last-child span {
+  display: inline-block;
+  width: 80px;
+  height: 45px;
+  border-radius: 4px;
+  background-color: #407beb;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  font-size: 12px;
+  margin-left: 15px;
+}
+div.container div.content {
+  width: 100%;
+}
+div.container div.content > form > div.title {
+  position: relative;
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+  color: #808080;
+}
+div.container div.content > form > div.title > p {
+  position: absolute;
+  top: 8px;
+  right: 30px;
+  font-size: 14px;
+  width: 500px;
+  color: #808080;
+  text-align: right;
+}
+div.container div.content > form > div.title > p span.interval {
+  margin-left: 12px;
+}
+div.container div.content > form > div.title > p span.color {
+  color: #09b8ee;
+  font-size: 14px;
+}
+div.container div.content > form > section {
+  width: 100%;
+}
+div.container div.content > form > section > div.title {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  background-color: #e8e8e8;
+  box-shadow: 5px 5px 5px #666;
+  border: 0.5px solid #e8e8e8;
+  border-radius: 4px;
+}
+div.container div.content > form > section > div.title > div.check_top {
+  width: 62px;
+  height: 40px;
+  float: left;
+}
+div.container div.content > form > section > div.title > div.check_top div.all {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+}
+div.container div.content > form > section > div.title > div.pudc_top {
+  width: 380px;
+}
+div.container div.content > form > section > div.title > div.pices_top {
+  width: 150px;
+}
+div.container div.content > form > section > div.title > div.num_top {
+  width: 150px;
+}
+div.container div.content > form > section > div.title > div.totle_top {
+  width: 120px;
+}
+div.container div.content > form > section > div.title > div.del_top {
+  width: 107px;
+}
+div.container div.content > form > section > div.title > div:not(:first-child) {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-left: 1px solid #666;
+}
+div.container div.content > form > section > div.box {
+  width: 100%;
+}
+div.container div.content > form > section > div.box > div.cont {
+  position: relative;
+  width: 100%;
+  border: 1px solid #e8e8e8;
+  margin-top: 10px;
+}
+div.container div.content > form > section > div.box > div.cont::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+div.container div.content > form > section > div.box > div.cont > div.check {
+  float: left;
+  width: 62px;
+  height: 115px;
+  line-height: 115px;
+  text-align: center;
+  font-size: 14px;
+}
+div.container div.content > form > section > div.box > div.cont > div.pudc {
+  float: left;
+}
+div.container div.content > form > section > div.box > div.cont > div.pudc > div.pudc_information {
+  width: 380px;
+  height: 115px;
+}
+div.container div.content > form > section > div.box > div.cont > div.pudc > div.pudc_information img {
+  float: left;
+  margin-top: 15px;
+}
+div.container div.content > form > section > div.box > div.cont > div.pudc > div.pudc_information > span.des {
+  display: block;
+  float: left;
+  width: 250px;
+  margin-left: 15px;
+  font-size: 12px;
+  height: 60px;
+  margin-top: 15px;
+}
+div.container div.content > form > section > div.box > div.cont > div.pudc > div.pudc_information p {
+  float: left;
+  width: 250px;
+  height: 30px;
+  line-height: 40px;
+  margin-left: 15px;
+  font-size: 10px;
+}
+div.container div.content > form > section > div.box > div.cont > div.pices {
+  float: left;
+  width: 150px;
+  height: 115px;
+  padding-top: 35px;
+  box-sizing: border-box;
+}
+div.container div.content > form > section > div.box > div.cont > div.pices p {
+  width: 150px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+}
+div.container div.content > form > section > div.box > div.cont > div.num {
+  float: left;
+  width: 150px;
+  height: 115px;
+  line-height: 115px;
+  text-align: center;
+}
+div.container div.content > form > section > div.box > div.cont > div.num input {
+  width: 30px;
+  height: 20px;
+  text-align: center;
+}
+div.container div.content > form > section > div.box > div.cont > div.totle {
+  float: left;
+  width: 120px;
+  height: 115px;
+  text-align: center;
+  line-height: 115px;
+}
+div.container div.content > form > section > div.box > div.cont > div.del {
+  float: left;
+  width: 105px;
+  height: 115px;
+  text-align: center;
+  line-height: 115px;
+}
+div.container div.content > form > section > div.box > div.cont > div.del a {
+  text-decoration: none;
+  color: #808080;
+}
+div.container div.content > form > section > div.footer {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  background-color: #e8e8e8;
+  box-shadow: 5px 5px 5px #666;
+  border: 0.5px solid #e8e8e8;
+  border-radius: 4px;
+}
+div.container div.content > form > section > div.footer > div.foot_check {
+  width: 62px;
+  height: 40px;
+  float: left;
+}
+div.container div.content > form > section > div.footer > div.foot_check div.all {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+}
+div.container div.content > form > section > div.footer > a.foot_del {
+  display: block;
+  float: left;
+  text-decoration: none;
+  height: 40px;
+  width: 50px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 12px;
+  color: #808080;
+}
+div.container div.content > form > section > div.footer > div.foot_qk {
+  width: 120px;
+  height: 25px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 7px;
+  background-color: #808080;
+  color: #fff;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 2px;
+}
+div.container div.content > form > section > div.footer > div.foot_cash {
+  float: right;
+  height: 40px;
+  width: 150px;
+  background-color: #09b8ee;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+}
+div.container div.content > form > section > div.footer > div.foot_tol {
+  position: absolute;
+  top: 8px;
+  right: 300px;
+  font-size: 14px;
+  width: 300px;
+  color: #808080;
+  text-align: right;
+}
+div.container div.content > form > section > div.footer > div.foot_tol span.interval {
+  margin-left: 12px;
+}
+div.container div.content > form > section > div.footer > div.foot_tol span.color {
+  color: #09b8ee;
+  font-size: 14px;
+}
