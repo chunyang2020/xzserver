@@ -1,0 +1,566 @@
+/*********************************************************************************************************/
+li.focus {
+  background-color: #e5e5e5;
+}
+.login {
+  color: #b1d122 !important;
+}
+.succ {
+  color: #06ec25;
+  opacity: 1 !important;
+  font-size: 12px;
+}
+.fail {
+  color: red;
+  opacity: 1 !important;
+  font-size: 12px;
+}
+.shelper {
+  position: absolute;
+  width: 367px;
+  max-height: 200px;
+  overflow: hidden;
+  padding: 6px;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 0.5px solid #858585;
+  border-top: none;
+}
+.shelper li {
+  max-width: 350px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: default;
+}
+.shelper li:hover {
+  background-color: #777;
+}
+.common {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #000;
+}
+/************************************************************************************************/
+.modal {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.lf {
+  float: left;
+}
+.rg {
+  float: right;
+}
+body div.header {
+  width: 100%;
+  height: 160px;
+  background-color: #f5f5f5;
+}
+body div.header div.iframe {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  background-color: #f5f5f5;
+}
+body div.header div.iframe div.header-top {
+  position: relative;
+  width: 1000px;
+  height: 80px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0);
+  background-color: #f5f5f5;
+  z-index: 10;
+}
+body div.header div.iframe div.header-top:before {
+  content: "";
+  display: table;
+}
+body div.header div.iframe div.header-top > div.midl-m {
+  margin-top: 4px;
+  margin-left: 80px;
+  width: 410px;
+  height: 34px;
+  border: 1px solid #0aa1ed;
+}
+body div.header div.iframe div.header-top > div.midl-m > input.txtSearch {
+  margin-top: 1px;
+  width: 280px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #0aa1ed;
+  box-sizing: boder-box;
+  font-size: 14px;
+  color: #757575;
+  outline: none;
+  background-color: #f5f5f5;
+}
+body div.header div.iframe div.header-top > div.midl-m > img.searchImg {
+  position: absolute;
+  top: -1px;
+  left: 380px;
+}
+body div.header div.iframe div.header-top > div.right-r {
+  height: 80px !important;
+  padding-top: 5px;
+  margin-left: 9px;
+}
+body div.header div.iframe div.header-top > div.right-r ul li a {
+  text-decoration: none;
+  color: #444;
+}
+body div.header div.iframe div.header-top > div.right-r ul li a:hover {
+  color: #000;
+}
+body div.container {
+  width: 1000px;
+  margin: 5px auto;
+}
+body div.container div.modal_dele_hint,
+body div.container div.modal_insert_hint,
+body div.container div.modal_dele_sele,
+body div.container div.modal_insert_sele {
+  width: 100%;
+  display: none;
+}
+body div.container div.modal_dele_hint div.dialog,
+body div.container div.modal_insert_hint div.dialog,
+body div.container div.modal_dele_sele div.dialog,
+body div.container div.modal_insert_sele div.dialog {
+  width: 400px;
+  height: 200px;
+  border-radius: 5px;
+  margin: 200px auto;
+  background-color: #f5f5f5;
+}
+body div.container div.modal_dele_hint div.dialog div:first-child,
+body div.container div.modal_insert_hint div.dialog div:first-child,
+body div.container div.modal_dele_sele div.dialog div:first-child,
+body div.container div.modal_insert_sele div.dialog div:first-child {
+  width: 100%;
+  height: 50px;
+  background-color: #e8e8e8;
+  box-shadow: 2px 2px 3px #666;
+  padding-left: 10px;
+  line-height: 50px;
+}
+body div.container div.modal_dele_hint div.dialog div:first-child span,
+body div.container div.modal_insert_hint div.dialog div:first-child span,
+body div.container div.modal_dele_sele div.dialog div:first-child span,
+body div.container div.modal_insert_sele div.dialog div:first-child span {
+  font-size: 18px;
+}
+body div.container div.modal_dele_hint div.dialog div:nth-child(2),
+body div.container div.modal_insert_hint div.dialog div:nth-child(2),
+body div.container div.modal_dele_sele div.dialog div:nth-child(2),
+body div.container div.modal_insert_sele div.dialog div:nth-child(2) {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+body div.container div.modal_dele_hint div.dialog div:last-child,
+body div.container div.modal_insert_hint div.dialog div:last-child,
+body div.container div.modal_dele_sele div.dialog div:last-child,
+body div.container div.modal_insert_sele div.dialog div:last-child {
+  width: 200px;
+  height: 70px;
+  margin: 0 auto;
+}
+body div.container div.modal_dele_hint div.dialog div:last-child span,
+body div.container div.modal_insert_hint div.dialog div:last-child span,
+body div.container div.modal_dele_sele div.dialog div:last-child span,
+body div.container div.modal_insert_sele div.dialog div:last-child span {
+  display: inline-block;
+  width: 80px;
+  height: 45px;
+  border-radius: 4px;
+  background-color: #407beb;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  font-size: 12px;
+  margin-left: 15px;
+}
+body div.container div.content {
+  width: 100%;
+}
+body div.container div.content > form > div.title {
+  position: relative;
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+  color: #808080;
+}
+body div.container div.content > form > div.title > p {
+  position: absolute;
+  top: 8px;
+  right: 30px;
+  font-size: 14px;
+  width: 500px;
+  color: #808080;
+  text-align: right;
+}
+body div.container div.content > form > div.title > p span.interval {
+  margin-left: 12px;
+}
+body div.container div.content > form > div.title > p span.color {
+  color: #09b8ee;
+  font-size: 14px;
+}
+body div.container div.content > form > section {
+  width: 100%;
+}
+body div.container div.content > form > section > div.title {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  background-color: #e8e8e8;
+  box-shadow: 5px 5px 5px #666;
+  border: 0.5px solid #e8e8e8;
+  border-radius: 4px;
+}
+body div.container div.content > form > section > div.title > div.check_top {
+  width: 62px;
+  height: 40px;
+  float: left;
+}
+body div.container div.content > form > section > div.title > div.check_top div.all {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+}
+body div.container div.content > form > section > div.title > div.pudc_top {
+  width: 380px;
+}
+body div.container div.content > form > section > div.title > div.pices_top {
+  width: 150px;
+}
+body div.container div.content > form > section > div.title > div.num_top {
+  width: 150px;
+}
+body div.container div.content > form > section > div.title > div.totle_top {
+  width: 120px;
+}
+body div.container div.content > form > section > div.title > div.del_top {
+  width: 107px;
+}
+body div.container div.content > form > section > div.title > div:not(:first-child) {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-left: 1px solid #666;
+}
+body div.container div.content > form > section > div.box {
+  width: 100%;
+}
+body div.container div.content > form > section > div.box > div.cont {
+  position: relative;
+  width: 100%;
+  border: 1px solid #e8e8e8;
+  margin-top: 10px;
+}
+body div.container div.content > form > section > div.box > div.cont::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body div.container div.content > form > section > div.box > div.cont > div.check {
+  float: left;
+  width: 62px;
+  height: 115px;
+  line-height: 115px;
+  text-align: center;
+  font-size: 14px;
+}
+body div.container div.content > form > section > div.box > div.cont > div.pudc {
+  float: left;
+}
+body div.container div.content > form > section > div.box > div.cont > div.pudc > div.pudc_information {
+  width: 380px;
+  height: 115px;
+}
+body div.container div.content > form > section > div.box > div.cont > div.pudc > div.pudc_information img {
+  float: left;
+  margin-top: 15px;
+}
+body div.container div.content > form > section > div.box > div.cont > div.pudc > div.pudc_information > span.des {
+  display: block;
+  float: left;
+  width: 250px;
+  margin-left: 15px;
+  font-size: 12px;
+  height: 60px;
+  margin-top: 15px;
+}
+body div.container div.content > form > section > div.box > div.cont > div.pudc > div.pudc_information p {
+  float: left;
+  width: 250px;
+  height: 30px;
+  line-height: 40px;
+  margin-left: 15px;
+  font-size: 10px;
+}
+body div.container div.content > form > section > div.box > div.cont > div.pices {
+  float: left;
+  width: 150px;
+  height: 115px;
+  padding-top: 35px;
+  box-sizing: border-box;
+}
+body div.container div.content > form > section > div.box > div.cont > div.pices p {
+  width: 150px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+}
+body div.container div.content > form > section > div.box > div.cont > div.num {
+  float: left;
+  width: 150px;
+  height: 115px;
+  line-height: 115px;
+  text-align: center;
+}
+body div.container div.content > form > section > div.box > div.cont > div.num input {
+  width: 30px;
+  height: 20px;
+  text-align: center;
+}
+body div.container div.content > form > section > div.box > div.cont > div.totle {
+  float: left;
+  width: 120px;
+  height: 115px;
+  text-align: center;
+  line-height: 115px;
+}
+body div.container div.content > form > section > div.box > div.cont > div.del {
+  float: left;
+  width: 105px;
+  height: 115px;
+  text-align: center;
+  line-height: 115px;
+}
+body div.container div.content > form > section > div.box > div.cont > div.del a {
+  text-decoration: none;
+  color: #808080;
+}
+body div.container div.content > form > section > div.footer {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  background-color: #e8e8e8;
+  box-shadow: 5px 5px 5px #666;
+  border: 0.5px solid #e8e8e8;
+  border-radius: 4px;
+}
+body div.container div.content > form > section > div.footer > div.foot_check {
+  width: 62px;
+  height: 40px;
+  float: left;
+}
+body div.container div.content > form > section > div.footer > div.foot_check div.all {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+}
+body div.container div.content > form > section > div.footer > a.foot_del {
+  display: block;
+  float: left;
+  text-decoration: none;
+  height: 40px;
+  width: 50px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 12px;
+  color: #808080;
+}
+body div.container div.content > form > section > div.footer > div.foot_qk {
+  width: 120px;
+  height: 25px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 7px;
+  background-color: #808080;
+  color: #fff;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 2px;
+}
+body div.container div.content > form > section > div.footer > div.foot_cash {
+  float: right;
+  height: 40px;
+  width: 150px;
+  background-color: #09b8ee;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+}
+body div.container div.content > form > section > div.footer > div.foot_tol {
+  position: absolute;
+  top: 8px;
+  right: 300px;
+  font-size: 14px;
+  width: 300px;
+  color: #808080;
+  text-align: right;
+}
+body div.container div.content > form > section > div.footer > div.foot_tol span.interval {
+  margin-left: 12px;
+}
+body div.container div.content > form > section > div.footer > div.foot_tol span.color {
+  color: #09b8ee;
+  font-size: 14px;
+}
+body div.hiden-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0);
+  background-color: #f5f5f5;
+  z-index: 20;
+  display: none;
+}
+body div.hiden-header:before {
+  content: "";
+  display: table;
+}
+body div.hiden-header > div.midl-m {
+  margin-top: 4px;
+  margin-left: 80px;
+  width: 410px;
+  height: 34px;
+  border: 1px solid #0aa1ed;
+}
+body div.hiden-header > div.midl-m > input.txtSearch {
+  margin-top: 1px;
+  width: 280px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #0aa1ed;
+  box-sizing: boder-box;
+  font-size: 14px;
+  color: #757575;
+  padding-left: 15px;
+  outline: none;
+  background-color: #f5f5f5;
+}
+body div.hiden-header > div.midl-m > img.searchImg {
+  position: absolute;
+  top: -1px;
+  left: 380px;
+}
+body div.hiden-header > div.midl-m ul.hiden {
+  top: 32px;
+  left: 2px;
+}
+body div.footer {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+}
+body div.footer div.footer-container1 {
+  height: 200px;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+body div.footer div.footer-container1::before {
+  content: "";
+  display: table;
+}
+body div.footer div.footer-container1 div.footer1 {
+  width: 1000px;
+  height: 85px;
+  margin: 50px auto;
+  margin-top: 50px;
+  background-color: #f5f5f5;
+}
+body div.footer div.footer-container1 div.footer1 > div {
+  float: left;
+  margin-top: 2px;
+  margin-left: 150px;
+}
+body div.footer div.footer-container1 div.footer1 > div p {
+  display: block;
+  margin-top: 0px;
+}
+body div.footer div.footer-container2 {
+  background-color: #fff;
+  width: 100%;
+}
+body div.footer div.footer-container2::before {
+  content: "";
+  display: table;
+}
+body div.footer div.footer-container2 div.footer2 {
+  width: 1200px;
+  height: 160px;
+  margin: 30px auto;
+}
+body div.footer div.footer-container2 div.footer2 div:first-child {
+  margin-top: 20px;
+  margin-left: 100px;
+  float: left;
+  width: 365px;
+  height: 120px;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(2) {
+  margin: 0 20px;
+  float: left;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(2) > ul {
+  float: left;
+  list-style: none;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(2) > ul a {
+  opacity: 0.6;
+  color: #111;
+  text-decoration: none;
+  font-size: 13px;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(2) > ul a:hover {
+  opacity: 1;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(3) {
+  float: left;
+  margin: 20px 20px;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(3) > p {
+  line-height: 8px;
+  font-size: 14px;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(4) {
+  float: left;
+  margin: 30px 0px;
+}
+body div.footer div.footer-container2 div.footer2 div:last-child {
+  font-size: 13px;
+  line-height: 20px;
+  width: 600px;
+  margin: 0 auto;
+}
+

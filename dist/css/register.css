@@ -1,0 +1,180 @@
+div.container {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+div.container div.header {
+  width: 100%;
+  height: 100px;
+}
+div.container div.header::before {
+  content: "";
+  display: table;
+}
+div.container div.header > a {
+  display: block;
+  margin-top: 20px;
+  margin-left: 200px;
+  text-decoration: none;
+  color: #222;
+}
+div.container div.header > a > img {
+  display: inline-block;
+  margin-top: 0px;
+  vertical-align: middle;
+}
+div.container div.header > a > span {
+  display: inline-block;
+  margin-left: 30px;
+  line-height: 100%;
+  font-size: 20px;
+}
+div.container div.content {
+  position: relative;
+  width: 100%;
+}
+div.container div.content div.register-png {
+  width: 100%;
+  height: 560px;
+  background-image: url(../6c48a23e5d4abe87922fb914abcb243a.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div.container div.content div.register-table {
+  width: 590px;
+  height: 465px;
+  background-color: rgba(2, 2, 2, 0.3);
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  border-radius: 2px;
+}
+div.container div.content div.register-table > p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 50px;
+}
+div.container div.content div.register-table > p span {
+  margin-left: 160px;
+}
+div.container div.content div.register-table > p span a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: lighter;
+}
+div.container div.content div.register-table div.form-input {
+  color: #fff;
+  height: 40px;
+  width: 580px;
+  margin: 30px auto;
+}
+div.container div.content div.register-table div.form-input label {
+  display: inline-block;
+  width: 350px;
+  text-align: right;
+}
+div.container div.content div.register-table div.form-input label > input {
+  width: 240px;
+  height: 34px;
+  background-color: #fff;
+  color: #333;
+  margin-left: 5px;
+}
+div.container div.content div.register-table div.form-input span {
+  color: red;
+  font-size: 12px;
+}
+div.container div.content div.register-table input.submit {
+  background-color: #27b0f6;
+  color: #fff;
+  width: 200px;
+  height: 30px;
+  margin-left: 200px;
+  border: 0;
+}
+div.footer {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+}
+div.footer div.footer-container1 {
+  height: 200px;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+div.footer div.footer-container1::before {
+  content: "";
+  display: table;
+}
+div.footer div.footer-container1 div.footer1 {
+  width: 1000px;
+  height: 85px;
+  margin: 50px auto;
+  margin-top: 50px;
+  background-color: #f5f5f5;
+}
+div.footer div.footer-container1 div.footer1 > div {
+  float: left;
+  margin-top: 2px;
+  margin-left: 150px;
+}
+div.footer div.footer-container1 div.footer1 > div p {
+  display: block;
+  margin-top: 0px;
+}
+div.footer div.footer-container2 {
+  background-color: #fff;
+  width: 100%;
+}
+div.footer div.footer-container2::before {
+  content: "";
+  display: table;
+}
+div.footer div.footer-container2 div.footer2 {
+  width: 1200px;
+  height: 160px;
+  margin: 30px auto;
+}
+div.footer div.footer-container2 div.footer2 div:first-child {
+  margin-top: 20px;
+  margin-left: 100px;
+  float: left;
+  width: 365px;
+  height: 120px;
+}
+div.footer div.footer-container2 div.footer2 div:nth-child(2) {
+  margin: 0 20px;
+  float: left;
+}
+div.footer div.footer-container2 div.footer2 div:nth-child(2) > ul {
+  float: left;
+  list-style: none;
+}
+div.footer div.footer-container2 div.footer2 div:nth-child(2) > ul a {
+  opacity: 0.6;
+  color: #111;
+  text-decoration: none;
+  font-size: 13px;
+}
+div.footer div.footer-container2 div.footer2 div:nth-child(2) > ul a:hover {
+  opacity: 1;
+}
+div.footer div.footer-container2 div.footer2 div:nth-child(3) {
+  float: left;
+  margin: 20px 20px;
+}
+div.footer div.footer-container2 div.footer2 div:nth-child(3) > p {
+  line-height: 8px;
+  font-size: 14px;
+}
+div.footer div.footer-container2 div.footer2 div:nth-child(4) {
+  float: left;
+  margin: 30px 0px;
+}
+div.footer div.footer-container2 div.footer2 div:last-child {
+  font-size: 13px;
+  line-height: 20px;
+  width: 600px;
+  margin: 0 auto;
+}
+

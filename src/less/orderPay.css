@@ -1,0 +1,651 @@
+/*********************************************************************************************************/
+.modal {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.lf {
+  float: left;
+}
+.rg {
+  float: right;
+}
+body div.header {
+  width: 100%;
+  height: 160px;
+  background-color: #f5f5f5;
+}
+body div.header div.iframe {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  background-color: #f5f5f5;
+}
+body div.header div.iframe div.header-top {
+  position: relative;
+  width: 1000px;
+  height: 80px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0);
+  background-color: #f5f5f5;
+  z-index: 10;
+}
+body div.header div.iframe div.header-top:before {
+  content: "";
+  display: table;
+}
+body div.header div.iframe div.header-top > div.midl-m {
+  margin-top: 4px;
+  margin-left: 80px;
+  width: 410px;
+  height: 34px;
+  border: 1px solid #0aa1ed;
+}
+body div.header div.iframe div.header-top > div.midl-m > input.txtSearch {
+  margin-top: 1px;
+  width: 280px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #0aa1ed;
+  box-sizing: boder-box;
+  font-size: 14px;
+  color: #757575;
+  outline: none;
+  background-color: #f5f5f5;
+}
+body div.header div.iframe div.header-top > div.midl-m > img.searchImg {
+  position: absolute;
+  top: -1px;
+  left: 380px;
+}
+body div.header div.iframe div.header-top > div.right-r {
+  height: 80px !important;
+  padding-top: 5px;
+  margin-left: 9px;
+}
+body div.header div.iframe div.header-top > div.right-r ul li a {
+  text-decoration: none;
+  color: #444;
+}
+body div.header div.iframe div.header-top > div.right-r ul li a:hover {
+  color: #000;
+}
+body div.container {
+  width: 1000px;
+  margin: 5px auto;
+}
+body div.container div.insert_adres {
+  width: 100%;
+  display: none;
+}
+body div.container div.insert_adres div.dialog {
+  position: relative;
+  width: 764px;
+  height: 434px;
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 150px auto;
+  background-color: #fff;
+}
+body div.container div.insert_adres div.dialog div {
+  margin-top: 20px;
+}
+body div.container div.insert_adres div.dialog > p {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #166df0;
+  color: #ffffff;
+  line-height: 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+body div.container div.insert_adres div.dialog > div.pudc_ple span:first-child {
+  color: red;
+  margin-right: 5px;
+  font-size: 18px;
+}
+body div.container div.insert_adres div.dialog > div.pudc_ple span:nth-child(2) {
+  margin-right: 20px;
+}
+body div.container div.insert_adres div.dialog > div.pudc_ple input {
+  width: 80px;
+  height: 26px;
+}
+body div.container div.insert_adres div.dialog > div.sele span:first-child {
+  margin-right: 5px;
+  font-size: 18px;
+  color: red;
+}
+body div.container div.insert_adres div.dialog > div.sele span:nth-child(2) {
+  margin-right: 25px;
+}
+body div.container div.insert_adres div.dialog > div.sele select {
+  height: 30px;
+  width: 120px;
+  margin-right: 25px;
+  font-size: 10px;
+}
+body div.container div.insert_adres div.dialog > div.adres_infoe span:first-child {
+  display: inline-block;
+  height: 65px;
+  line-height: 65px;
+  color: red;
+  font-size: 18px;
+  margin-right: 5px;
+}
+body div.container div.insert_adres div.dialog > div.adres_infoe span:nth-chile(2) {
+  display: inline-block;
+  height: 65px;
+  line-height: 65px;
+  margin-right: 20px;
+}
+body div.container div.insert_adres div.dialog > div.adres_infoe textarea {
+  vertical-align: middle;
+}
+body div.container div.insert_adres div.dialog > div.phone span:first-child {
+  color: red;
+  font-size: 18px;
+  margin-right: 5px;
+}
+body div.container div.insert_adres div.dialog > div.phone span:nth-chile(2) {
+  margin-right: 15px;
+}
+body div.container div.insert_adres div.dialog > div.phone input {
+  margin-right: 20px;
+}
+body div.container div.insert_adres div.dialog > div.post span {
+  margin-left: 12px;
+}
+body div.container div.insert_adres div.dialog > div.addr_name span {
+  margin-left: 12px;
+}
+body div.container div.insert_adres div.dialog > div.btn button {
+  width: 120px;
+  height: 35px;
+  border-radius: 3px;
+  background-color: #09b8ee;
+  color: #fff;
+  font-size: 14px;
+  border: 0;
+}
+body div.container div.content {
+  width: 100%;
+}
+body div.container div.content > div.point_title {
+  width: 100%;
+  height: 38px;
+}
+body div.container div.content > div.point_title > div {
+  float: left;
+  width: 320px;
+  height: 38px;
+  text-align: center;
+  line-height: 38px;
+  font-size: 12px;
+  color: #808080;
+}
+body div.container div.content > div.point_title > div > b {
+  display: inline-block;
+  width: 20px;
+  height: 38px;
+  margin: 0;
+}
+body div.container div.content > div.point_title > div.d1 {
+  background-color: #166df0;
+  color: #fff;
+}
+body div.container div.content > div.point_title > div.d1 > b {
+  float: right;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-left: 20px solid #166df0;
+  border-top: 19px solid #f5f5f5;
+  border-bottom: 19px solid #f5f5f5;
+}
+body div.container div.content > div.point_title > div.d2 {
+  background-color: #e8e8e8;
+}
+body div.container div.content > div.point_title > div.d2 > b:first-child {
+  display: block;
+  float: left;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-left: 20px solid #f5f5f5;
+  border-top: 19px solid #e8e8e8;
+  border-bottom: 19px solid #e8e8e8;
+}
+body div.container div.content > div.point_title > div.d2 > b:last-child {
+  display: block;
+  float: right;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-left: 20px solid #e8e8e8;
+  border-top: 19px solid #f5f5f5;
+  border-bottom: 19px solid #f5f5f5;
+}
+body div.container div.content > div.point_title > div.d3 {
+  background-color: #e8e8e8;
+}
+body div.container div.content > div.point_title > div.d3 > b {
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  border-left: 20px solid #f5f5f5;
+  border-top: 19px solid #e8e8e8;
+  border-bottom: 19px solid #e8e8e8;
+}
+body div.container div.content > div.addres {
+  width: 100%;
+}
+body div.container div.content > div.addres > div.d1 {
+  border-bottom: 1px solid #808080;
+  height: 40px;
+  width: 100%;
+}
+body div.container div.content > div.addres > div.d1 > p:first-child {
+  float: left;
+  font-size: 18px;
+  color: #808080;
+  height: 40px;
+  line-height: 40px;
+  cursor: default;
+}
+body div.container div.content > div.addres > div.d1 > p:last-child {
+  float: right;
+  font-size: 12px;
+  color: #808080;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+body div.container div.content > div.addres > div.d2 {
+  width: 100%;
+  height: 40px;
+  margin-top: 15px;
+}
+body div.container div.content > div.addres > div.d2 > div.show_infor {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #09b8ee;
+  border-radius: 3px;
+  padding: 0;
+}
+body div.container div.content > div.addres > div.d2 > div.show_infor > div {
+  float: left;
+  height: 40px;
+}
+body div.container div.content > div.addres > div.d2 > div.show_infor > div:first-child {
+  line-height: 40px;
+  width: 150px;
+  text-align: center;
+  background-color: #166df0;
+  color: #fff;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+body div.container div.content > div.addres > div.d2 > div.show_infor > div:last-child {
+  line-height: 40px;
+  width: 800px;
+  color: #808080;
+}
+body div.container div.content > div.addres > div.d2 > div.show_infor > div:last-child span {
+  margin-left: 20px;
+}
+body div.container div.content > div.addres > div.d2 > div.show_infor > div:last-child span.none {
+  margin-right: 10px;
+}
+body div.container div.content > div.addres > div.none_infor {
+  width: 100%;
+  border: 0.5px solid #09b8ee;
+  border-top: 0;
+  padding: 0;
+}
+body div.container div.content > div.addres > div.none_infor::before {
+  content: "";
+  display: table;
+}
+body div.container div.content > div.addres > div.none_infor > div.show_infor {
+  display: none;
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  padding: 0;
+}
+body div.container div.content > div.addres > div.none_infor > div.show_infor span.none {
+  margin-right: 10px;
+  display: none;
+}
+body div.container div.content > div.addres > div.none_infor > div.show_infor:hover {
+  border: 0.5px solid #e8e8e8;
+}
+body div.container div.content > div.addres > div.none_infor > div.show_infor:hover .none {
+  display: inline-block;
+  cursor: default;
+}
+body div.container div.content > div.addres > div.none_infor > div.show_infor > div {
+  float: left;
+  height: 40px;
+}
+body div.container div.content > div.addres > div.none_infor > div.show_infor > div:first-child {
+  line-height: 40px;
+  width: 150px;
+  text-align: center;
+  background-color: #e8e8e8;
+  color: #808080;
+}
+body div.container div.content > div.addres > div.none_infor > div.show_infor > div:last-child {
+  line-height: 40px;
+  width: 800px;
+  color: #808080;
+}
+body div.container div.content > div.addres > div.none_infor > div.show_infor > div:last-child span {
+  margin-left: 20px;
+}
+body div.container div.content > div.addres > a {
+  display: block;
+  text-decoration: none;
+  text-align: left;
+  line-height: 30px;
+  color: #808080;
+}
+body div.container div.content > div.addres > a span {
+  margin-left: 10px;
+}
+body div.container div.content > form > div.title {
+  position: relative;
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+  color: #808080;
+}
+body div.container div.content > form > section {
+  width: 100%;
+}
+body div.container div.content > form > section > div.title {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  background-color: #e8e8e8;
+  box-shadow: 5px 5px 5px #666;
+  border: 0.5px solid #e8e8e8;
+  border-radius: 4px;
+}
+body div.container div.content > form > section > div.title > div {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-left: 1px solid #666;
+}
+body div.container div.content > form > section > div.title > div.pudc_top {
+  width: 410px;
+  border: 0;
+}
+body div.container div.content > form > section > div.title > div.pices_top {
+  width: 200px;
+}
+body div.container div.content > form > section > div.title > div.num_top {
+  width: 200px;
+}
+body div.container div.content > form > section > div.title > div.totle_top {
+  width: 130px;
+}
+body div.container div.content > form > section > div.box {
+  width: 100%;
+}
+body div.container div.content > form > section > div.box > div.cont {
+  position: relative;
+  width: 100%;
+  border: 1px solid #e8e8e8;
+  margin-top: 10px;
+}
+body div.container div.content > form > section > div.box > div.cont::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body div.container div.content > form > section > div.box > div.cont > div.pudc {
+  float: left;
+  width: 410px;
+}
+body div.container div.content > form > section > div.box > div.cont > div.pudc > div.pudc_information {
+  width: 410px;
+  height: 115px;
+}
+body div.container div.content > form > section > div.box > div.cont > div.pudc > div.pudc_information img {
+  float: left;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+body div.container div.content > form > section > div.box > div.cont > div.pudc > div.pudc_information > span.des {
+  display: block;
+  float: left;
+  width: 250px;
+  margin-left: 15px;
+  font-size: 12px;
+  height: 60px;
+  margin-top: 15px;
+}
+body div.container div.content > form > section > div.box > div.cont > div.pudc > div.pudc_information p {
+  float: left;
+  width: 250px;
+  height: 30px;
+  line-height: 40px;
+  margin-left: 15px;
+  font-size: 10px;
+}
+body div.container div.content > form > section > div.box > div.cont > div.pices {
+  float: left;
+  width: 200px;
+  height: 115px;
+  padding-top: 35px;
+  box-sizing: border-box;
+}
+body div.container div.content > form > section > div.box > div.cont > div.pices p {
+  width: 150px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+}
+body div.container div.content > form > section > div.box > div.cont > div.num {
+  float: left;
+  width: 200px;
+  height: 115px;
+  line-height: 115px;
+  text-align: center;
+}
+body div.container div.content > form > section > div.box > div.cont > div.num input {
+  width: 30px;
+  height: 20px;
+  text-align: center;
+}
+body div.container div.content > form > section > div.box > div.cont > div.totle {
+  float: left;
+  width: 130px;
+  height: 115px;
+  text-align: center;
+  line-height: 115px;
+}
+body div.container div.content > form > section > div.box > div.cont > div.del {
+  float: left;
+  width: 105px;
+  height: 115px;
+  text-align: center;
+  line-height: 115px;
+}
+body div.container div.content > form > section > div.box > div.cont > div.del a {
+  text-decoration: none;
+  color: #808080;
+}
+body div.container div.content > form > section > div.footer {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  background-color: #e8e8e8;
+  box-shadow: 5px 5px 5px #666;
+  border: 0.5px solid #e8e8e8;
+  border-radius: 4px;
+}
+body div.container div.content > form > section > div.footer > div.foot_check {
+  width: 62px;
+  height: 40px;
+  float: left;
+}
+body div.container div.content > form > section > div.footer > div.foot_check div.all {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+}
+body div.container div.content > form > section > div.footer > a.foot_del {
+  display: block;
+  float: left;
+  text-decoration: none;
+  height: 40px;
+  width: 50px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 12px;
+  color: #808080;
+}
+body div.container div.content > form > section > div.footer > div.foot_qk {
+  width: 120px;
+  height: 25px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 7px;
+  background-color: #808080;
+  color: #fff;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 2px;
+}
+body div.container div.content > form > section > div.footer > div.foot_cash {
+  float: right;
+  height: 40px;
+  width: 150px;
+  background-color: #09b8ee;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 2px;
+  color: #fff;
+}
+body div.container div.content > form > section > div.footer > div.foot_tol {
+  position: absolute;
+  top: 8px;
+  right: 300px;
+  font-size: 14px;
+  width: 300px;
+  color: #808080;
+  text-align: right;
+}
+body div.container div.content > form > section > div.footer > div.foot_tol span.interval {
+  margin-left: 12px;
+}
+body div.container div.content > form > section > div.footer > div.foot_tol span.color {
+  color: #09b8ee;
+  font-size: 14px;
+}
+body div.footer {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+}
+body div.footer div.footer-container1 {
+  height: 200px;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+body div.footer div.footer-container1::before {
+  content: "";
+  display: table;
+}
+body div.footer div.footer-container1 div.footer1 {
+  width: 1000px;
+  height: 85px;
+  margin: 50px auto;
+  margin-top: 50px;
+  background-color: #f5f5f5;
+}
+body div.footer div.footer-container1 div.footer1 > div {
+  float: left;
+  margin-top: 2px;
+  margin-left: 150px;
+}
+body div.footer div.footer-container1 div.footer1 > div p {
+  display: block;
+  margin-top: 0px;
+}
+body div.footer div.footer-container2 {
+  background-color: #fff;
+  width: 100%;
+}
+body div.footer div.footer-container2::before {
+  content: "";
+  display: table;
+}
+body div.footer div.footer-container2 div.footer2 {
+  width: 1200px;
+  height: 160px;
+  margin: 30px auto;
+}
+body div.footer div.footer-container2 div.footer2 div:first-child {
+  margin-top: 20px;
+  margin-left: 100px;
+  float: left;
+  width: 365px;
+  height: 120px;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(2) {
+  margin: 0 20px;
+  float: left;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(2) > ul {
+  float: left;
+  list-style: none;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(2) > ul a {
+  opacity: 0.6;
+  color: #111;
+  text-decoration: none;
+  font-size: 13px;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(2) > ul a:hover {
+  opacity: 1;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(3) {
+  float: left;
+  margin: 20px 20px;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(3) > p {
+  line-height: 8px;
+  font-size: 14px;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(4) {
+  float: left;
+  margin: 30px 0px;
+}
+body div.footer div.footer-container2 div.footer2 div:last-child {
+  font-size: 13px;
+  line-height: 20px;
+  width: 600px;
+  margin: 0 auto;
+}

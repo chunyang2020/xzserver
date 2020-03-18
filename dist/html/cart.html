@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+     maximum-scale=1, user-scalable=no">
+    <title></title>
+    <!-- 引入bootstrap-->
+    <link rel="stylesheet" href="../common/bootstrap.css">
+    <style>
+        
+    </style>
+<link href="../css/cart.css" rel="stylesheet"></head>
+<body>
+    <!-- 页面头部 -->
+    <div class="header" id="floor3">
+        
+    </div>
+    
+    <!-- 页面主题--详情页 -->
+    <div class="container">
+         <!--页面导航行-->
+        <div class="row nav">
+            <div class="col-xs-12">
+                <ul class="list-inline">
+                    <li>
+                        <a href="#">首页</a>
+                    </li>
+                    <li>
+                        <a href="#floor1">首页推荐</a>
+                    </li>
+                    <li>
+                        <a href="#floor2">学习用品</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 模态框提示框 -->
+        <div class="modal_dele_hint">
+            <div class="dialog">
+                <div>
+                    <span>删除提醒</span>
+                </div>
+                <div>
+                    <img src="../imgg/model/model_img2.png" alt="">
+                    <span>确定删除您的这个宝贝吗？</span>
+                </div>
+                <div>
+                    <span>确定</span>
+                    <span>取消</span>
+                </div>
+            </div>
+        </div>
+        <div class="modal_insert_hint">
+            <div class="dialog">
+                <div>
+                    <span>添加提醒</span>
+                </div>
+                <div>
+                    <img src="../img/model/model_img2.png" alt="">
+                    <span>确定要将您的宝贝放入购物车吗？</span>
+                </div>
+                <div>
+                    <span>确定</span>
+                    <span>取消</span>
+                </div>
+            </div>
+            <div class="information"></div>
+        </div>
+        <!-- 页面主要内容 -->
+        <div class="content">
+            <form action="" method="POST">
+                <div class="title">
+                    <b>购物车</b>
+                    <p>
+                        已选<span class="total color">0</span>件商品<span class="interval"></span>
+                        合计(不含运费):<span class="totalPrices color susum">0.00</span><span class="unit color">元</span>
+                    </p>
+                </div>
+                <section>
+                    <div class="title">
+                        <div class="check_top">
+                            <div class="all">
+                                <span class="normal">
+                                    <img src="../img/cart/product_normal.png" alt="" data-replace="true.png">
+                                </span>
+                                <input type="hidden" name="" value="">全选
+                            </div>
+                        </div>
+                        <div class="pudc_top">商品</div>
+                        <div class="pices_top">单价(元)</div>
+                        <div class="num_top">数量</div>
+                        <div class="totle_top">金额</div>
+                        <div class="del_top">操作</div>
+                    </div>
+                    <div class="box">
+                        <div class="cont">
+                            <div class="check">
+                                <div class="Each">
+                                    <span class="normal">
+                                        <img src="../img/cart/product_normal.png" alt="">
+                                    </span>
+                                    <input type="hidden" name="" value="">
+                                </div>
+                            </div>
+                            <div class="pudc">
+                                <div class="pudc_information" id="pudcId3">
+                                    <img src="../img/cart/product_simg1.png" class="">
+                                    <input type="hidden" name="" value="">
+                                    <span class="des">
+                                        联想(Lenovo)YOGA5 PRO 标配版电脑(i5-7200u 8G 512G SSD FHD IPS)银
+                                        <input type="hidden" name="" value="">
+                                    </span>
+                                    <p class="col"><span>颜色：</span><span class="color_des">深空灰 <input type="hidden" name="" value=""></span></p>
+                                </div>
+                            </div>
+                            <div class="pices">
+                                <p class="pices_des">达内专享价</p>
+                                <p class="pices_information"><b>￥</b><span>4888.00 <input type="hidden" name="" value=""></span></p>
+                            </div>
+                            <div class="num"><span class="reduc">&nbsp;-&nbsp;</span><input type="text" value="1"><span
+                                    class="add">&nbsp;+&nbsp;</span>
+                            </div>
+                            <div class="totle">
+                                <span>￥</span>
+                                <span class="totle_information">4888.00</span>
+                            </div>
+                            <div class="del">
+                                <a href="javascript:;" class="del_d">删除</a>
+                            </div>
+                        </div>
+
+                        <div class="cont">
+                            <div class="check">
+                                <div class="Each">
+                                    <span class="normal">
+                                        <img src="../img/cart/product_normal.png" alt="">
+                                    </span>
+                                    <input type="hidden" name="" value="">
+                                </div>
+                            </div>
+                            <div class="pudc">
+                                <div class="pudc_information" id="pudcId3">
+                                    <img src="../img/cart/product_simg1.png" class="">
+                                    <input type="hidden" name="" value="">
+                                    <span class="des">
+                                        联想(Lenovo)YOGA5 PRO 标配版电脑(i5-7200u 8G 512G SSD FHD IPS)银
+                                        <input type="hidden" name="" value="">
+                                    </span>
+                                    <p class="col"><span>颜色：</span><span class="color_des">深空灰 <input type="hidden" name="" value=""></span></p>
+                                </div>
+                            </div>
+                            <div class="pices">
+                                <p class="pices_des">达内专享价</p>
+                                <p class="pices_information"><b>￥</b><span>4888.00 <input type="hidden" name="" value=""></span></p>
+                            </div>
+                            <div class="num"><span class="reduc">&nbsp;-&nbsp;</span><input type="text" value="1"><span
+                                    class="add">&nbsp;+&nbsp;</span>
+                            </div>
+                            <div class="totle">
+                                <span>￥</span>
+                                <span class="totle_information">4888.00</span>
+                            </div>
+                            <div class="del">
+                                <a href="javascript:;" class="del_d">删除</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="foot_check">
+                            <div class="all">
+                                <span class="normal">
+                                    <img src="../img/cart/product_normal.png" alt="" data-replace="true.png">
+                                </span> <input type="hidden" name="" value="">全选
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="foot_del">删除</a>
+                        <div class="foot_qk">清空失效商品</div>
+                        <div class="foot_cash" id="go-buy">去结算</div>
+                        <div class="foot_tol">
+                            已选<span class="total color">0</span>件商品<span class="interval"></span>
+                            合计(不含运费):<span class="totalPrices color susum">0.00</span><span class="unit color">元</span>
+                        </div>
+                    </div>
+                </section>
+            </form> 
+            <div class="none"></div>  
+        </div>
+        
+    </div>
+
+    <!-- 页尾footer-->
+    <div class="footer">
+    </div>
+
+    <!--引入jquery-->
+    <script src="../common/jquery-3.4.1.js"></script>
+<script type="text/javascript" src="../js/cart.bundle.js"></script></body>
+</html>

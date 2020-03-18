@@ -1,0 +1,287 @@
+/*****************************s导航条的样式******************************************/
+div.nav {
+  width: 1000px;
+  margin: 0 auto;
+}
+div.nav > div:first-child > ul > li > a {
+  font-weight: bold;
+  color: #ccc;
+  font-size: 14px;
+  margin-left: 18px;
+}
+div.nav > div:first-child > ul > li > a:hover {
+  color: #b8b8b8;
+}
+/*****************************F1F1F1***********************************************/
+div.first-floor {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+div.first-floor img {
+  transition: all 0.5s linear;
+}
+div.first-floor > div:first-child {
+  margin-top: 30px;
+  margin-left: 10px;
+  width: 1100px;
+  border-bottom: 2px solid #d9d9d9;
+}
+div.first-floor > div:first-child b {
+  font-size: 20px;
+  margin-left: 20px;
+  color: #777;
+}
+div.first-floor > div.first-floor1 {
+  margin-top: 10px;
+}
+div.first-floor > div.first-floor1 > div.left {
+  background-color: #e8e8e8;
+  width: 620px;
+  height: 376px;
+}
+div.first-floor > div.first-floor1 > div.left > div:first-child {
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  width: 255px;
+}
+div.first-floor > div.first-floor1 > div.left > div:first-child > p.title {
+  font-size: 32px;
+  font-weight: lighter;
+  color: #000;
+}
+div.first-floor > div.first-floor1 > div.left > div:first-child > p.detail-btn {
+  width: 134px;
+  height: 40px;
+  background-color: #0aa1ed;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 40px;
+}
+div.first-floor > div.first-floor1 > div.left > div:first-child > p.detail-btn > a {
+  color: #fff;
+}
+div.first-floor > div.first-floor1 > div.left > div:first-child > P.price {
+  color: #0aa1ed;
+  font-size: 20px;
+}
+div.first-floor > div.first-floor1 > div.left > span > img {
+  margin-left: 150px;
+  margin-top: 40px;
+}
+div.first-floor > div.first-floor1 > div.left > span > img:hover {
+  transform: scale(1.1);
+}
+div.first-floor > div.first-floor1 > div.right {
+  margin-left: 40px;
+  background-color: #e8e8e8;
+  width: ;
+  height: 376px;
+}
+div.first-floor > div.first-floor1 > div.right div:first-child {
+  width: 255px;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+}
+div.first-floor > div.first-floor1 > div.right div:first-child > p.title {
+  font-size: 30px;
+  font-weight: lighter;
+}
+div.first-floor > div.first-floor1 > div.right div:first-child > p.detail-btn {
+  width: 134px;
+  height: 40px;
+  background-color: #0aa1ed;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 40px;
+}
+div.first-floor > div.first-floor1 > div.right div:first-child > p.detail-btn > a {
+  color: #fff;
+}
+div.first-floor > div.first-floor1 > div.right div:first-child > P.price {
+  color: #0aa1ed;
+  font-size: 20px;
+}
+div.first-floor > div.first-floor1 > div.right img {
+  margin-top: 60px;
+  margin-left: 140px;
+}
+div.first-floor > div.first-floor1 > div.right img:hover {
+  transform: scale(1.1);
+}
+div.first-floor > div.first-floor2 {
+  margin-top: 20px;
+}
+div.first-floor > div.first-floor2 > div {
+  background-color: #e8e8e8;
+  height: 300px;
+}
+div.first-floor > div.first-floor2 > div:not(:first-child) {
+  margin-left: 16px;
+  width: 235px;
+}
+div.first-floor > div.first-floor2 > div:first-child span {
+  text-align: center;
+}
+div.first-floor > div.first-floor2 > div span {
+  display: block;
+  margin: 10px auto;
+}
+div.first-floor > div.first-floor2 > div span img:hover {
+  transform: scale(1.05);
+}
+div.first-floor > div.first-floor2 > div p {
+  text-align: center;
+  margin: 10px auto;
+}
+div.first-floor > div.first-floor2 > div p:last-child {
+  width: 100px;
+  height: 24px;
+  background-color: #0aa1ed;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 24px;
+}
+div.first-floor > div.first-floor2 > div p > a {
+  color: #fff;
+}
+div.first-floor > div.first-floor2 > div p.price {
+  color: #0aa1ed;
+  font-size: 15px;
+}
+/********************F2F2F2**************************************************************/
+div.second-floor {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+div.second-floor img {
+  transition: all 0.5s linear;
+}
+div.second-floor > div:first-child {
+  margin-top: 30px;
+  margin-left: 10px;
+  width: 1100px;
+  border-bottom: 2px solid #d9d9d9;
+}
+div.second-floor > div:first-child b {
+  font-size: 20px;
+  margin-left: 20px;
+  color: #777;
+}
+div.second-floor > div.first-floor1 {
+  margin-top: 10px;
+}
+div.second-floor > div.first-floor1 > div.left {
+  background-color: #e8e8e8;
+  width: 620px;
+  height: 376px;
+}
+div.second-floor > div.first-floor1 > div.left > div:first-child {
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  width: 255px;
+}
+div.second-floor > div.first-floor1 > div.left > div:first-child > p.title {
+  font-size: 32px;
+  font-weight: lighter;
+  color: #000;
+}
+div.second-floor > div.first-floor1 > div.left > div:first-child > p.detail-btn {
+  width: 134px;
+  height: 40px;
+  background-color: #0aa1ed;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 40px;
+}
+div.second-floor > div.first-floor1 > div.left > div:first-child > p.detail-btn > a {
+  color: #fff;
+}
+div.second-floor > div.first-floor1 > div.left > div:first-child > P.price {
+  color: #0aa1ed;
+  font-size: 20px;
+}
+div.second-floor > div.first-floor1 > div.left > span > img {
+  margin-left: 300px;
+  margin-top: 40px;
+}
+div.second-floor > div.first-floor1 > div.left > span > img:hover {
+  transform: scale(1.1);
+}
+div.second-floor > div.first-floor1 > div.right {
+  margin-left: 40px;
+  background-color: #e8e8e8;
+  width: ;
+  height: 376px;
+}
+div.second-floor > div.first-floor1 > div.right div:first-child {
+  width: 255px;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+}
+div.second-floor > div.first-floor1 > div.right div:first-child > p.title {
+  font-size: 30px;
+  font-weight: lighter;
+}
+div.second-floor > div.first-floor1 > div.right div:first-child > p.detail-btn {
+  width: 134px;
+  height: 40px;
+  background-color: #0aa1ed;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 40px;
+}
+div.second-floor > div.first-floor1 > div.right div:first-child > p.detail-btn > a {
+  color: #fff;
+}
+div.second-floor > div.first-floor1 > div.right div:first-child > P.price {
+  color: #0aa1ed;
+  font-size: 20px;
+}
+div.second-floor > div.first-floor1 > div.right span > img {
+  margin-top: 50px;
+  margin-left: 300px;
+}
+div.second-floor > div.first-floor1 > div.right span > img:hover {
+  transform: scale(1.1);
+}
+div.second-floor > div.first-floor2 {
+  margin-top: 20px;
+}
+div.second-floor > div.first-floor2 > div {
+  background-color: #e8e8e8;
+  height: 300px;
+}
+div.second-floor > div.first-floor2 > div:not(:first-child) {
+  margin-left: 16px;
+  width: 235px;
+}
+div.second-floor > div.first-floor2 > div span {
+  display: block;
+  text-align: center;
+}
+div.second-floor > div.first-floor2 > div span img:hover {
+  transform: scale(1.05);
+}
+div.second-floor > div.first-floor2 > div p {
+  text-align: center;
+  margin: 10px auto;
+}
+div.second-floor > div.first-floor2 > div p:last-child {
+  width: 100px;
+  height: 24px;
+  background-color: #0aa1ed;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 24px;
+}
+div.second-floor > div.first-floor2 > div p > a {
+  color: #fff;
+}
+div.second-floor > div.first-floor2 > div p.price {
+  color: #0aa1ed;
+  font-size: 15px;
+}

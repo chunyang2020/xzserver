@@ -1,0 +1,46 @@
+li.focus {
+  background-color: #e5e5e5;
+}
+.login {
+  color: #b1d122 !important;
+}
+.succ {
+  color: #06ec25;
+  opacity: 1 !important;
+  font-size: 12px;
+}
+.fail {
+  color: red;
+  opacity: 1 !important;
+  font-size: 12px;
+}
+.shelper {
+  position: absolute;
+  width: 367px;
+  max-height: 200px;
+  overflow: hidden;
+  padding: 6px;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 0.5px solid #858585;
+  border-top: none;
+}
+.shelper li {
+  max-width: 350px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: default;
+}
+.shelper li:hover {
+  background-color: #777;
+}
+.common {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #000;
+}
+/************************************************************************************************/

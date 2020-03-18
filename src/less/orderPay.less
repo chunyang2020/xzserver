@@ -1,0 +1,643 @@
+//模态框样式div.modal_.......的样式
+//引入头部样式
+@import 'atcsLess/header.less';
+//引入footer楼层样式
+@import 'atcsLess/footer.less';
+
+
+
+
+.modal{
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.lf{
+    float: left;
+}
+.rg{
+    float: right;
+}
+
+body{
+    div.header {
+        .header()
+    }
+
+    div.container {
+        width: 1000px;
+        margin: 5px auto;
+
+        div.insert_adres {
+            width: 100%;
+            display: none;
+
+            div.dialog {
+                position: relative;
+                width: 764px;
+                height: 434px;
+                padding: 40px;
+                box-sizing: border-box;
+                border-radius: 5px;
+                margin: 150px auto;
+                background-color: #fff;
+
+                div {
+                    margin-top: 20px;
+                }
+
+                >p {
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    height: 25px;
+                    width: 25px;
+                    border-radius: 50%;
+                    background-color: #166df0;
+                    color: #ffffff;
+                    line-height: 25px;
+                    text-align: center;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+
+                >div.pudc_ple {
+                    span:first-child {
+                        color: red;
+                        margin-right: 5px;
+                        font-size: 18px;
+                    }
+
+                    span:nth-child(2) {
+                        margin-right: 20px;
+                    }
+
+                    input {
+                        width: 80px;
+                        height: 26px;
+                    }
+                }
+
+                >div.sele {
+                    span:first-child {
+                        margin-right: 5px;
+                        font-size: 18px;
+                        color: red;
+                    }
+
+                    span:nth-child(2) {
+                        margin-right: 25px;
+                    }
+
+                    select {
+                        height: 30px;
+                        width: 120px;
+                        margin-right: 25px;
+                        font-size: 10px;
+                    }
+                }
+
+                >div.adres_infoe {
+                    span:first-child {
+                        display: inline-block;
+                        height: 65px;
+                        line-height: 65px;
+                        color: red;
+                        font-size: 18px;
+                        margin-right: 5px;
+                    }
+
+                    span:nth-chile(2) {
+                        display: inline-block;
+                        height: 65px;
+                        line-height: 65px;
+                        margin-right: 20px;
+                    }
+
+                    textarea {
+                        vertical-align: middle;
+                    }
+                }
+
+                >div.phone {
+                    span:first-child {
+                        color: red;
+                        font-size: 18px;
+                        margin-right: 5px;
+                    }
+
+                    span:nth-chile(2) {
+                        margin-right: 15px;
+                    }
+
+                    input {
+                        margin-right: 20px;
+                    }
+                }
+
+                >div.post {
+                    span {
+                        margin-left: 12px;
+                    }
+                }
+
+                >div.addr_name {
+                    span {
+                        margin-left: 12px;
+                    }
+                }
+
+                >div.btn {
+                    button {
+                        width: 120px;
+                        height: 35px;
+                        border-radius: 3px;
+                        background-color: #09b8ee;
+                        color: #fff;
+                        font-size: 14px;
+                        border: 0;
+                    }
+                }
+            }
+
+        }
+
+        div.content {
+            width: 100%;
+
+            >div.point_title {
+                width: 100%;
+                height: 38px;
+
+                >div {
+                    .lf;
+                    width: 320px;
+                    height: 38px;
+                    text-align: center;
+                    line-height: 38px;
+                    font-size: 12px;
+                    color: #808080;
+
+                    >b {
+                        display: inline-block;
+                        width: 20px;
+                        height: 38px;
+                        margin: 0;
+                    }
+                }
+
+                >div.d1 {
+                    background-color: #166df0;
+                    color: #fff;
+
+                    >b {
+                        .rg;
+                        background-color: #fff;
+                        box-sizing: border-box;
+                        border-left: 20px solid #166df0;
+                        border-top: 19px solid #f5f5f5;
+                        border-bottom: 19px solid #f5f5f5;
+                    }
+                }
+
+                >div.d2 {
+                    background-color: #e8e8e8;
+
+                    >b:first-child {
+                        display: block;
+                        .lf;
+                        background-color: #fff;
+                        box-sizing: border-box;
+                        border-left: 20px solid #f5f5f5;
+                        border-top: 19px solid #e8e8e8;
+                        border-bottom: 19px solid #e8e8e8;
+                    }
+
+                    >b:last-child {
+                        display: block;
+                        .rg;
+                        background-color: #fff;
+                        box-sizing: border-box;
+                        border-left: 20px solid #e8e8e8;
+                        border-top: 19px solid #f5f5f5;
+                        border-bottom: 19px solid #f5f5f5;
+                    }
+                }
+
+                >div.d3 {
+                    background-color: #e8e8e8;
+
+                    >b {
+                        display: block;
+                        .lf;
+                        box-sizing: border-box;
+                        border-left: 20px solid #f5f5f5;
+                        border-top: 19px solid #e8e8e8;
+                        border-bottom: 19px solid #e8e8e8;
+                    }
+                }
+            }
+
+            >div.addres {
+                width: 100%;
+
+                >div.d1 {
+                    border-bottom: 1px solid #808080;
+                    height: 40px;
+                    width: 100%;
+
+                    >p:first-child {
+                        .lf;
+                        font-size: 18px;
+                        color: #808080;
+                        height: 40px;
+                        line-height: 40px;
+                        cursor: default;
+
+                    }
+
+                    >p:last-child {
+                        .rg;
+                        font-size: 12px;
+                        color: #808080;
+                        height: 40px;
+                        line-height: 40px;
+                        margin-right: 15px;
+                        cursor: pointer;
+                    }
+                }
+
+                >div.d2 {
+                    width: 100%;
+                    height: 40px;
+                    margin-top: 15px;
+
+                    >div.show_infor {
+                        width: 100%;
+                        height: 40px;
+                        border: 1px solid #09b8ee;
+                        border-radius: 3px;
+                        padding: 0;
+
+                        >div {
+                            .lf;
+                            height: 40px;
+
+                            &:first-child {
+                                line-height: 40px;
+                                width: 150px;
+                                text-align: center;
+                                background-color: #166df0;
+                                color: #fff;
+                                border-bottom-left-radius: 3px;
+                                border-top-left-radius: 3px;
+                            }
+
+                            &:last-child {
+                                line-height: 40px;
+                                width: 800px;
+                                color: #808080;
+
+                                span {
+                                    margin-left: 20px;
+
+                                    &.none {
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                >div.none_infor {
+                    width: 100%;
+                    border: .5px solid #09b8ee;
+                    border-top: 0;
+                    padding: 0;
+
+                    &::before {
+                        content: "";
+                        display: table;
+                    }
+
+                    >div.show_infor {
+                        display: none;
+                        margin-top: 10px;
+                        width: 100%;
+                        height: 40px;
+                        border-radius: 3px;
+                        padding: 0;
+
+                        span.none {
+                            margin-right: 10px;
+                            display: none;
+                        }
+
+                        &:hover {
+                            border: .5px solid #e8e8e8;
+
+                            .none {
+                                display: inline-block;
+                                cursor: default;
+                            }
+                        }
+
+                        >div {
+                            .lf;
+                            height: 40px;
+
+                            &:first-child {
+                                line-height: 40px;
+                                width: 150px;
+                                text-align: center;
+                                background-color: #e8e8e8;
+                                color: #808080;
+                            }
+
+                            &:last-child {
+                                line-height: 40px;
+                                width: 800px;
+                                color: #808080;
+
+                                span {
+                                    margin-left: 20px;
+
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                >a {
+                    display: block;
+                    text-decoration: none;
+                    text-align: left;
+                    line-height: 30px;
+                    color: #808080;
+
+                    span {
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            >form {
+                >div.title {
+                    position: relative;
+                    font-size: 18px;
+                    height: 40px;
+                    line-height: 40px;
+                    color: #808080;
+                }
+
+                >section {
+                    width: 100%;
+
+                    >div.title {
+                        position: relative;
+                        width: 100%;
+                        height: 40px;
+                        margin-top: 5px;
+                        background-color: #e8e8e8;
+                        box-shadow: 5px 5px 5px #666;
+                        border: .5px solid #e8e8e8;
+                        border-radius: 4px;
+
+                        >div {
+                            .lf;
+                            height: 40px;
+                            line-height: 40px;
+                            text-align: center;
+                            border-left: 1px solid #666;
+                        }
+
+                        >div.pudc_top {
+                            width: 410px;
+                            border: 0;
+                        }
+
+                        >div.pices_top {
+                            width: 200px;
+                        }
+
+                        >div.num_top {
+                            width: 200px;
+                        }
+
+                        >div.totle_top {
+                            width: 130px;
+                        }
+
+
+                    }
+
+                    >div.box {
+                        width: 100%;
+
+                        >div.cont {
+                            position: relative;
+                            width: 100%;
+                            border: 1px solid #e8e8e8;
+                            //border-right: 1px solid #e8e8e8;
+                            margin-top: 10px;
+
+                            &::after {
+                                content: "";
+                                display: block;
+                                clear: both;
+                            }
+
+                            >div.pudc {
+                                .lf;
+                                width: 410px;
+
+                                >div.pudc_information {
+                                    width: 410px;
+                                    height: 115px;
+
+                                    img {
+                                        .lf;
+                                        margin-top: 15px;
+                                        margin-left: 15px;
+                                    }
+
+                                    >span.des {
+                                        display: block;
+                                        .lf;
+                                        width: 250px;
+                                        margin-left: 15px;
+                                        font-size: 12px;
+                                        height: 60px;
+                                        margin-top: 15px;
+                                    }
+
+                                    p {
+                                        .lf;
+                                        width: 250px;
+                                        height: 30px;
+                                        line-height: 40px;
+                                        margin-left: 15px;
+                                        font-size: 10px;
+                                    }
+                                }
+
+                            }
+
+                            >div.pices {
+                                .lf;
+                                width: 200px;
+                                height: 115px;
+                                padding-top: 35px;
+                                box-sizing: border-box;
+
+                                p {
+                                    width: 150px;
+                                    text-align: center;
+                                    height: 20px;
+                                    line-height: 20px;
+                                }
+                            }
+
+                            >div.num {
+                                .lf;
+                                width: 200px;
+                                height: 115px;
+                                line-height: 115px;
+                                text-align: center;
+
+                                input {
+                                    width: 30px;
+                                    height: 20px;
+                                    text-align: center;
+                                }
+                            }
+
+                            >div.totle {
+                                .lf;
+                                width: 130px;
+                                height: 115px;
+                                text-align: center;
+                                line-height: 115px;
+                            }
+
+                            >div.del {
+                                .lf;
+                                width: 105px;
+                                height: 115px;
+                                text-align: center;
+                                line-height: 115px;
+
+                                a {
+                                    text-decoration: none;
+                                    color: #808080;
+                                }
+                            }
+                        }
+
+                    }
+
+                     >div.footer {
+                         position: relative;
+                         width: 100%;
+                         height: 40px;
+                         margin-top: 5px;
+                         background-color: #e8e8e8;
+                         box-shadow: 5px 5px 5px #666;
+                         border: .5px solid #e8e8e8;
+                         border-radius: 4px;
+
+                         >div.foot_check {
+                             width: 62px;
+                             height: 40px;
+                             .lf;
+
+                             div.all {
+                                 height: 40px;
+                                 line-height: 40px;
+                                 text-align: center;
+                                 vertical-align: middle;
+                                 font-size: 12px;
+                             }
+                         }
+
+                         >a.foot_del {
+                             display: block;
+                             .lf;
+                             text-decoration: none;
+                             height: 40px;
+                             width: 50px;
+                             text-align: center;
+                             line-height: 40px;
+                             font-size: 12px;
+                             color: #808080;
+                         }
+
+                         >div.foot_qk {
+                             width: 120px;
+                             height: 25px;
+                             .lf;
+                             margin-left: 10px;
+                             margin-top: 7px;
+                             background-color: #808080;
+                             color: #fff;
+                             line-height: 25px;
+                             text-align: center;
+                             border-radius: 2px;
+                         }
+
+                         >div.foot_cash {
+                             .rg;
+                             height: 40px;
+                             width: 150px;
+                             background-color: #09b8ee;
+                             line-height: 40px;
+                             text-align: center;
+                             font-size: 14px;
+                             border-radius: 2px;
+                             color: #fff;
+                         }
+
+                         >div.foot_tol {
+                             position: absolute;
+                             top: 8px;
+                             right: 300px;
+                             font-size: 14px;
+                             width: 300px;
+                             color: #808080;
+                             text-align: right;
+
+                             span.interval {
+                                 margin-left: 12px;
+                             }
+
+                             span.color {
+                                 color: #09b8ee;
+                                 font-size: 14px;
+                             }
+                         }
+                     }
+                }
+            }
+        }
+    }
+
+    div.footer {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0);
+
+        div.footer-container1 {
+            .footer-container1();
+        }
+
+        div.footer-container2 {
+            .footer-container2();
+        }
+    }
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+     maximum-scale=1, user-scalable=no">
+    <title></title>
+    <!-- 引入bootstrap-->
+    <link rel="stylesheet" href="../common/bootstrap.css"/>
+    <style>
+        
+    </style>
+<link href="../css/orderPay.css" rel="stylesheet"></head>
+<body>
+    <!-- 页面头部 -->
+    <div class="header" id="floor3">
+    </div>
+    
+    <!-- 页面主题--详情页 -->
+    <div class="container">
+         <!--页面导航行-->
+        <div class="row nav">
+            <div class="col-xs-12">
+                <ul class="list-inline">
+                    <li>
+                        <a href="#">首页</a>
+                    </li>
+                    <li>
+                        <a href="#floor1">首页推荐</a>
+                    </li>
+                    <li>
+                        <a href="#floor2">学习用品</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 模态框提示框 -->
+        <div class="insert_adres">
+            <div class="dialog">
+                <p>x</p>
+                <div class="pudc_ple">
+                    <span>*</span><span>收货人:</span>
+                    <input type="text">
+                </div>
+                <div class="sele">
+                    <span>*</span><span>地&nbsp;&nbsp;址:</span>
+                    <select name="sheng" id="">
+                        <option value="02202">--------请选择省份-------</option>
+                        <option value=""></option>
+                    </select>
+                    城市:
+                    <select name="sheng" id="">
+                        <option value="02202">------请选择市区----</option>
+                        <option value=""></option>
+                    </select>
+                    区/县:
+                    <select name="sheng" id="">
+                        <option value="02202">--------请选择区县-------</option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div class="adres_infoe">
+                    <span>*</span><span>详细地址:</span>
+                    <textarea name="" id="" cols="60" rows="3" placeholder="！如实填写详细收货地址，以免造成不必要的麻烦。"></textarea>
+                </div>
+                <div class="phone">
+                    <span>*</span><span>手机号码:</span>
+                    <input type="text">
+                    <span>固定点话:</span>
+                    <input type="text">
+                </div>
+                <div class="post">
+                    <span>邮政编码:</span>
+                    <input type="text">
+                </div>
+                <div class="addr_name">
+                    <span>地址名称:</span>
+                    <input type="text">
+                    <span>
+                        如:
+                        <span>家</span>
+                        <span>公司</span>
+                        <span>宿舍</span>
+                    </span>
+                </div>
+                <div class="btn">
+                    <button>添加收货人信息</button>
+                </div>
+            </div>
+        </div>
+        <!-- 页面主要内容 -->
+        <div class="content">
+            <div class="point_title">
+                <div class="d1">
+                    确认订单信息
+                    <b></b>
+                </div>
+                <div class="d2">
+                    支付订单
+                    <b></b>
+                    <b></b>
+                </div>
+                <div class="d3">
+                    支付完成
+                    <b></b>
+                </div>
+            </div>
+            <div class="addres">
+                <div class="d1">
+                    <p>收货人信息</p>
+                    <p>新增收获地址</p>
+                </div>
+                
+                <div class="d2">
+                    <div class="show_infor">
+                        <div class="name">
+                            <span>李春春</span>
+                        </div>
+                        <div>
+                            <span>黑龙江</span>
+                            <span>松北区</span>
+                            <span>南京路</span>
+                            <span>13936666988</span>
+                            <span class="none">默认地址</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="none_infor">
+                    <div class="show_infor">
+                        <div class="name">
+                            <span>冉冉</span>
+                        </div>
+                        <div>
+                            <span>黑龙江</span>
+                            <span>松北区</span>
+                            <span>南京路</span>
+                            <span>13936666988</span>
+                            <span class="none">设为默认地址</span>
+                        </div>
+                    </div>
+                    <div class="show_infor">
+                        <div class="name">
+                            <span>零零</span>
+                        </div>
+                        <div>
+                            <span>黑龙江</span>
+                            <span>松北区</span>
+                            <span>南京路</span>
+                            <span>13936666988</span>
+                            <span class="none">设为默认地址</span>
+                        </div>
+                    </div>
+                    <div class="show_infor">
+                        <div class="name">
+                            <span>洋洋</span>
+                        </div>
+                        <div>
+                            <span>黑龙江</span>
+                            <span>松北区</span>
+                            <span>南京路</span>
+                            <span>13936666988</span>
+                            <span class="none">设为默认地址</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#"><span>更多地址>></span></a>
+            </div>
+            
+            <form action="" method="POST">
+                <div class="title">
+                    <b>请核对您的订单信息</b>
+                </div>
+                <section>
+                    <div class="title">
+                        <div class="pudc_top">商品</div>
+                        <div class="pices_top">单价(元)</div>
+                        <div class="num_top">数量</div>
+                        <div class="totle_top">金额</div>
+                    </div>
+                    <div class="box">
+                        <div class="cont">
+                            <div class="pudc">
+                                <div class="pudc_information" id="pudcId3">
+                                    <img src="../img/cart/product_simg1.png" class="">
+                                    <input type="hidden" name="" value="">
+                                    <span class="des">
+                                        联想(Lenovo)YOGA5 PRO 标配版电脑(i5-7200u 8G 512G SSD FHD IPS)银
+                                        <input type="hidden" name="" value="">
+                                    </span>
+                                    <p class="col"><span>颜色：</span><span class="color_des">深空灰 <input type="hidden" name="" value=""></span></p>
+                                </div>
+                            </div>
+                            <div class="pices">
+                                <p class="pices_des">达内专享价</p>
+                                <p class="pices_information"><b>￥</b><span>4888.00 <input type="hidden" name="" value=""></span></p>
+                            </div>
+                            <div class="num">
+                                X
+                                <span class="reduc">1</span>
+                            </div>
+                            <div class="totle">
+                                <span>￥</span>
+                                <span class="totle_information">4888.00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="footer">
+                        <div class="foot_qk">返回购物车</div>
+                        <div class="foot_cash" id="go-buy">确认并付款</div>
+                        <div class="foot_tol">
+                            已选<span class="total color">0</span>件商品<span class="interval"></span>
+                            合计(不含运费):<span class="totalPrices color susum">0.00</span><span class="unit color">元</span>
+                        </div>
+                    </div>
+                </section>
+            </form> 
+        </div>
+        
+    </div>
+
+    <!-- 页尾footer-->
+    <div class="footer">
+    
+    </div>
+
+    <!--引入jquery-->
+    <script src="../common/jquery-3.4.1.js"></script>
+
+<script type="text/javascript" src="../js/orderPay.bundle.js"></script></body>
+</html>

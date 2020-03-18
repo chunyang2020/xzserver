@@ -1,0 +1,567 @@
+/*********************************************************************************************************/
+li.focus {
+  background-color: #e5e5e5;
+}
+.login {
+  color: #b1d122 !important;
+}
+.succ {
+  color: #06ec25;
+  opacity: 1 !important;
+  font-size: 12px;
+}
+.fail {
+  color: red;
+  opacity: 1 !important;
+  font-size: 12px;
+}
+.shelper {
+  position: absolute;
+  width: 367px;
+  max-height: 200px;
+  overflow: hidden;
+  padding: 6px;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 0.5px solid #858585;
+  border-top: none;
+}
+.shelper li {
+  max-width: 350px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: default;
+}
+.shelper li:hover {
+  background-color: #777;
+}
+.common {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #000;
+}
+/************************************************************************************************/
+li.focus {
+  background-color: #e5e5e5;
+}
+.login {
+  color: #b1d122 !important;
+}
+.succ {
+  color: #06ec25;
+  opacity: 1 !important;
+  font-size: 12px;
+}
+.fail {
+  color: red;
+  opacity: 1 !important;
+  font-size: 12px;
+}
+.shelper {
+  position: absolute;
+  width: 367px;
+  max-height: 200px;
+  overflow: hidden;
+  padding: 6px;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 0.5px solid #858585;
+  border-top: none;
+}
+.shelper li {
+  max-width: 350px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: default;
+}
+.shelper li:hover {
+  background-color: #777;
+}
+.common {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #000;
+}
+/*******************************************************************************************/
+li.focus {
+  background-color: #e5e5e5;
+}
+.modal {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.lf {
+  float: left;
+}
+.rg {
+  float: right;
+}
+.shelper {
+  position: absolute;
+  width: 367px;
+  max-height: 200px;
+  overflow: hidden;
+  padding: 6px;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 0.5px solid #858585;
+  border-top: none;
+}
+.shelper li {
+  max-width: 350px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: default;
+}
+.shelper li:hover {
+  background-color: #777;
+}
+body {
+  background-color: #fbfbfb !important;
+  opacity: 1;
+  background-color: #000000;
+}
+body div.header {
+  width: 100%;
+  height: 160px;
+  background-color: #f5f5f5;
+}
+body div.header div.iframe {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  background-color: #f5f5f5;
+}
+body div.header div.iframe div.header-top {
+  position: relative;
+  width: 1000px;
+  height: 80px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0);
+  background-color: #f5f5f5;
+  z-index: 10;
+}
+body div.header div.iframe div.header-top:before {
+  content: "";
+  display: table;
+}
+body div.header div.iframe div.header-top > div.midl-m {
+  margin-top: 4px;
+  margin-left: 80px;
+  width: 410px;
+  height: 34px;
+  border: 1px solid #0aa1ed;
+}
+body div.header div.iframe div.header-top > div.midl-m > input.txtSearch {
+  margin-top: 1px;
+  width: 280px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #0aa1ed;
+  box-sizing: boder-box;
+  font-size: 14px;
+  color: #757575;
+  outline: none;
+  background-color: #f5f5f5;
+}
+body div.header div.iframe div.header-top > div.midl-m > img.searchImg {
+  position: absolute;
+  top: -1px;
+  left: 380px;
+}
+body div.header div.iframe div.header-top > div.right-r {
+  height: 80px !important;
+  padding-top: 5px;
+  margin-left: 9px;
+}
+body div.header div.iframe div.header-top > div.right-r ul li a {
+  text-decoration: none;
+  color: #444;
+}
+body div.header div.iframe div.header-top > div.right-r ul li a:hover {
+  color: #000;
+}
+body div.container {
+  width: 1000px;
+  margin: 0 auto;
+  min-height: 1000px;
+}
+body div.container div.box {
+  width: 100%;
+  position: relative;
+}
+body div.container div.box > div.cont {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+body div.container div.box > div.cont::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body div.container div.box > div.cont > div.pudc {
+  float: left;
+  width: 410px;
+}
+body div.container div.box > div.cont > div.pudc > div.pudc_information {
+  width: 410px;
+  height: 115px;
+}
+body div.container div.box > div.cont > div.pudc > div.pudc_information img {
+  float: left;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+body div.container div.box > div.cont > div.pudc > div.pudc_information > span.des {
+  display: block;
+  float: left;
+  width: 250px;
+  margin-left: 15px;
+  font-size: 12px;
+  height: 60px;
+  margin-top: 15px;
+}
+body div.container div.box > div.cont > div.pudc > div.pudc_information p {
+  float: left;
+  width: 250px;
+  height: 30px;
+  line-height: 40px;
+  margin-left: 15px;
+  font-size: 10px;
+}
+body div.container div.box > div.cont > div.pices {
+  float: left;
+  width: 200px;
+  height: 115px;
+  padding-top: 15px;
+  box-sizing: border-box;
+}
+body div.container div.box > div.cont > div.pices p {
+  width: 150px;
+  text-align: center;
+  font-size: 12px;
+}
+body div.container div.box > div.cont > div.num {
+  float: left;
+  width: 200px;
+  height: 115px;
+  line-height: 115px;
+  text-align: center;
+}
+body div.container div.box > div.cont > div.num span {
+  color: #df9e13;
+  font-size: 14px;
+}
+body div.container div.box > div.cont > div.num input {
+  width: 30px;
+  height: 20px;
+  text-align: center;
+}
+body div.container div.box > div.cont > div.totle {
+  float: left;
+  width: 130px;
+  text-align: center;
+  padding-top: 15px;
+}
+body div.container div.box > div.cont > div.totle ul li {
+  font-size: 12px;
+}
+body div.container div.box > p {
+  width: 200px;
+  height: 25px;
+  border-radius: 3px;
+  background-color: #0c6ae6;
+  color: #60ee3d;
+  text-align: center;
+  line-height: 25px;
+  font-size: 14px;
+}
+body div.container div.box > div.box-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0);
+}
+body div.container div.box > div.box-modal:hover {
+  background-color: rgba(21, 150, 236, 0.3);
+}
+body div.hiden-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0);
+  background-color: #f5f5f5;
+  z-index: 20;
+  display: none;
+}
+body div.hiden-header:before {
+  content: "";
+  display: table;
+}
+body div.hiden-header > div.midl-m {
+  margin-top: 4px;
+  margin-left: 80px;
+  width: 410px;
+  height: 34px;
+  border: 1px solid #0aa1ed;
+}
+body div.hiden-header > div.midl-m > input.txtSearch {
+  margin-top: 1px;
+  width: 280px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #0aa1ed;
+  box-sizing: boder-box;
+  font-size: 14px;
+  color: #757575;
+  padding-left: 15px;
+  outline: none;
+  background-color: #f5f5f5;
+}
+body div.hiden-header > div.midl-m > img.searchImg {
+  position: absolute;
+  top: -1px;
+  left: 380px;
+}
+body div.hiden-header > div.midl-m ul.hiden {
+  top: 32px;
+  left: 2px;
+}
+body div.login-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+body div.login-modal div.login-table {
+  width: 300px;
+  height: 330px;
+  background-color: rgba(2, 2, 2, 0.3);
+  position: absolute;
+  top: 200px;
+  right: 650px;
+  border-radius: 2px;
+}
+body div.login-modal div.login-table > button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #0aa1ed;
+  border: 0.5px solid #022638;
+}
+body div.login-modal div.login-table > p {
+  opacity: 1;
+  width: 240px;
+  height: 40px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 40px;
+  margin: 0 auto;
+  border-bottom: 1px solid #fff;
+}
+body div.login-modal div.login-table > p > span {
+  margin-left: 50px;
+}
+body div.login-modal div.login-table > p > span > a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #fff;
+}
+body div.login-modal div.login-table div.user {
+  height: 80px;
+  width: 240px;
+  margin: 15px auto;
+  position: relative;
+}
+body div.login-modal div.login-table div.user > input {
+  font-size: 14px;
+  line-height: 37px;
+  width: 240px;
+  height: 37px;
+}
+body div.login-modal div.login-table div.user > span {
+  vertical-align: middle;
+  margin-left: -35px;
+}
+body div.login-modal div.login-table div.user > div {
+  position: absolute;
+  opacity: 0;
+}
+body div.login-modal div.login-table div.pwd {
+  height: 80px;
+  width: 240px;
+  margin: 0 auto;
+  position: relative;
+}
+body div.login-modal div.login-table div.pwd > input {
+  font-size: 14px;
+  line-height: 37px;
+  width: 240px;
+  height: 37px;
+}
+body div.login-modal div.login-table div.pwd > span {
+  vertical-align: middle;
+  margin-left: -35px;
+}
+body div.login-modal div.login-table div.pwd > div {
+  position: absolute;
+  opacity: 0;
+}
+body div.login-modal div.login-table div.chose label {
+  color: #fff;
+  margin-left: 10px;
+  font-size: 12px;
+}
+body div.login-modal div.login-table div.chose label > input {
+  vertical-align: middle;
+}
+body div.login-modal div.login-table div.chose span {
+  margin-left: 120px;
+}
+body div.login-modal div.login-table div.chose span a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 10px;
+}
+body div.login-modal div.login-table > input {
+  width: 220px;
+  height: 35px;
+  background-color: #2065ea;
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  margin-left: 30px;
+  border-radius: 2px;
+}
+body div.login-modal div.login-table > div:last-child {
+  opacity: 0;
+  transition: all 0.5s linear;
+  position: absolute;
+  top: 108px;
+  left: -208px;
+  width: 200px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  line-height: 40px;
+  font-size: 12px;
+}
+body div.footer {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+}
+body div.footer div.footer-container1 {
+  height: 200px;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+body div.footer div.footer-container1::before {
+  content: "";
+  display: table;
+}
+body div.footer div.footer-container1 div.footer1 {
+  width: 1000px;
+  height: 85px;
+  margin: 50px auto;
+  margin-top: 50px;
+  background-color: #f5f5f5;
+}
+body div.footer div.footer-container1 div.footer1 > div {
+  float: left;
+  margin-top: 2px;
+  margin-left: 150px;
+}
+body div.footer div.footer-container1 div.footer1 > div p {
+  display: block;
+  margin-top: 0px;
+}
+body div.footer div.footer-container2 {
+  background-color: #fff;
+  width: 100%;
+}
+body div.footer div.footer-container2::before {
+  content: "";
+  display: table;
+}
+body div.footer div.footer-container2 div.footer2 {
+  width: 1200px;
+  height: 160px;
+  margin: 30px auto;
+}
+body div.footer div.footer-container2 div.footer2 div:first-child {
+  margin-top: 20px;
+  margin-left: 100px;
+  float: left;
+  width: 365px;
+  height: 120px;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(2) {
+  margin: 0 20px;
+  float: left;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(2) > ul {
+  float: left;
+  list-style: none;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(2) > ul a {
+  opacity: 0.6;
+  color: #111;
+  text-decoration: none;
+  font-size: 13px;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(2) > ul a:hover {
+  opacity: 1;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(3) {
+  float: left;
+  margin: 20px 20px;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(3) > p {
+  line-height: 8px;
+  font-size: 14px;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(4) {
+  float: left;
+  margin: 30px 0px;
+}
+body div.footer div.footer-container2 div.footer2 div:last-child {
+  font-size: 13px;
+  line-height: 20px;
+  width: 600px;
+  margin: 0 auto;
+}

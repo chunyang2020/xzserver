@@ -1,0 +1,430 @@
+/*********************************************************************************************************/
+.modal {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.lf {
+  float: left;
+}
+.rg {
+  float: right;
+}
+body > div.header {
+  width: 100%;
+  height: 160px;
+  background-color: #f5f5f5;
+}
+body > div.header div.iframe {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  background-color: #f5f5f5;
+}
+body > div.header div.iframe div.header-top {
+  position: relative;
+  width: 1000px;
+  height: 80px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0);
+  background-color: #f5f5f5;
+  z-index: 10;
+}
+body > div.header div.iframe div.header-top:before {
+  content: "";
+  display: table;
+}
+body > div.header div.iframe div.header-top > div.midl-m {
+  margin-top: 4px;
+  margin-left: 80px;
+  width: 410px;
+  height: 34px;
+  border: 1px solid #0aa1ed;
+}
+body > div.header div.iframe div.header-top > div.midl-m > input.txtSearch {
+  margin-top: 1px;
+  width: 280px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #0aa1ed;
+  box-sizing: boder-box;
+  font-size: 14px;
+  color: #757575;
+  outline: none;
+  background-color: #f5f5f5;
+}
+body > div.header div.iframe div.header-top > div.midl-m > img.searchImg {
+  position: absolute;
+  top: -1px;
+  left: 380px;
+}
+body > div.header div.iframe div.header-top > div.right-r {
+  height: 80px !important;
+  padding-top: 5px;
+  margin-left: 9px;
+}
+body > div.header div.iframe div.header-top > div.right-r ul li a {
+  text-decoration: none;
+  color: #444;
+}
+body > div.header div.iframe div.header-top > div.right-r ul li a:hover {
+  color: #000;
+}
+body > div.container {
+  width: 1000px;
+  margin: 5px auto;
+}
+body > div.container div.modal_dele_hint,
+body > div.container div.modal_insert_hint,
+body > div.container div.modal_dele_sele,
+body > div.container div.modal_insert_sele {
+  width: 100%;
+  display: none;
+}
+body > div.container div.modal_dele_hint div.dialog,
+body > div.container div.modal_insert_hint div.dialog,
+body > div.container div.modal_dele_sele div.dialog,
+body > div.container div.modal_insert_sele div.dialog {
+  width: 400px;
+  height: 200px;
+  border-radius: 5px;
+  margin: 200px auto;
+  background-color: #f5f5f5;
+}
+body > div.container div.modal_dele_hint div.dialog div:first-child,
+body > div.container div.modal_insert_hint div.dialog div:first-child,
+body > div.container div.modal_dele_sele div.dialog div:first-child,
+body > div.container div.modal_insert_sele div.dialog div:first-child {
+  width: 100%;
+  height: 50px;
+  background-color: #e8e8e8;
+  box-shadow: 2px 2px 3px #666;
+  padding-left: 10px;
+  line-height: 50px;
+}
+body > div.container div.modal_dele_hint div.dialog div:first-child span,
+body > div.container div.modal_insert_hint div.dialog div:first-child span,
+body > div.container div.modal_dele_sele div.dialog div:first-child span,
+body > div.container div.modal_insert_sele div.dialog div:first-child span {
+  font-size: 18px;
+}
+body > div.container div.modal_dele_hint div.dialog div:nth-child(2),
+body > div.container div.modal_insert_hint div.dialog div:nth-child(2),
+body > div.container div.modal_dele_sele div.dialog div:nth-child(2),
+body > div.container div.modal_insert_sele div.dialog div:nth-child(2) {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+body > div.container div.modal_dele_hint div.dialog div:last-child,
+body > div.container div.modal_insert_hint div.dialog div:last-child,
+body > div.container div.modal_dele_sele div.dialog div:last-child,
+body > div.container div.modal_insert_sele div.dialog div:last-child {
+  width: 200px;
+  height: 70px;
+  margin: 0 auto;
+}
+body > div.container div.modal_dele_hint div.dialog div:last-child span,
+body > div.container div.modal_insert_hint div.dialog div:last-child span,
+body > div.container div.modal_dele_sele div.dialog div:last-child span,
+body > div.container div.modal_insert_sele div.dialog div:last-child span {
+  display: inline-block;
+  width: 80px;
+  height: 45px;
+  border-radius: 4px;
+  background-color: #407beb;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  font-size: 12px;
+  margin-left: 15px;
+}
+body > div.container div.content {
+  width: 100%;
+}
+body > div.container div.content > form > div.title {
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+  color: #808080;
+}
+body > div.container div.content > form > section > div.box > div.title {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  background-color: #e8e8e8;
+  box-shadow: 5px 5px 5px #666;
+  border: 0.5px solid #e8e8e8;
+  border-radius: 4px;
+}
+body > div.container div.content > form > section > div.box > div.title div.manager {
+  width: 70px;
+  height: 24px;
+  font-size: 12px;
+  color: #fff;
+  line-height: 24px;
+  background-color: #ffb30f;
+  text-align: center;
+  border-radius: 1px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+body > div.container div.content > form > section > div.box > div.title div.manager:hover {
+  background-color: #eda50a;
+}
+body > div.container div.content > form > section > div.box > div.title div.check {
+  position: absolute;
+  top: 13px;
+  left: 120px;
+  width: 500px;
+}
+body > div.container div.content > form > section > div.box > div.title div.check div.all {
+  font-size: 12px;
+  vertical-align: middle;
+  float: left;
+}
+body > div.container div.content > form > section > div.box > div.title div.check div.dele,
+body > div.container div.content > form > section > div.box > div.title div.check div.infor {
+  font-size: 12px;
+  float: left;
+  margin-left: 20px;
+}
+body > div.container div.content > form > section > div.box > div.title div.check div.infor_none {
+  display: none;
+  font-size: 12px;
+  vertical-align: middle;
+  margin-left: 20px;
+  float: left;
+}
+body > div.container div.content > form > section > div.box > div.title div.clear {
+  float: right;
+  width: 100px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: #929292;
+  border-radius: 2px;
+  color: #f5f5f5;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 5px;
+  font-size: 12px;
+}
+body > div.container div.content > form > section > div.box > div.cont {
+  position: relative;
+  width: 100%;
+  border: 1px solid #e8e8e8;
+}
+body > div.container div.content > form > section > div.box > div.cont::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body > div.container div.content > form > section > div.box > div.cont > div {
+  padding: 0px;
+  width: 230px;
+  height: 250px;
+  border: 1px solid #18ccec;
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #fff;
+}
+body > div.container div.content > form > section > div.box > div.cont > div div.img {
+  width: 100%;
+  overflow: hidden;
+}
+body > div.container div.content > form > section > div.box > div.cont > div > div.describe p {
+  font-size: 12px;
+  text-align: center;
+}
+body > div.container div.content > form > section > div.box > div.cont > div > div.describe span {
+  font-size: 12px;
+  color: #11a2f7;
+}
+body > div.container div.content > form > section > div.box > div.cont > div > div.describe span.price {
+  margin-left: 10px;
+}
+body > div.container div.content > form > section > div.box > div.cont > div > div.describe span.addCart {
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+body > div.container div.content > form > section > div.box > div.cont > div > div.describe span.succee {
+  display: none;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+body > div.container div.content > form > section > div.box > div.cont > div > div.mask {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+body > div.container div.content > form > section > div.box > div.cont > div > div.mask > div {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+body > div.container div.content > form > section > div.box > div.footer {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  background-color: #e8e8e8;
+  box-shadow: 5px 5px 5px #666;
+  border: 0.5px solid #e8e8e8;
+  border-radius: 4px;
+}
+body > div.container div.content > form > section > div.box > div.footer div.manager {
+  width: 70px;
+  height: 24px;
+  font-size: 12px;
+  color: #fff;
+  line-height: 24px;
+  background-color: #ffb30f;
+  text-align: center;
+  border-radius: 1px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+body > div.container div.content > form > section > div.box > div.footer div.manager:hover {
+  background-color: #eda50a;
+}
+body > div.container div.content > form > section > div.box > div.footer div.check {
+  position: absolute;
+  top: 13px;
+  left: 120px;
+  width: 500px;
+}
+body > div.container div.content > form > section > div.box > div.footer div.check div.all {
+  font-size: 12px;
+  vertical-align: middle;
+  float: left;
+}
+body > div.container div.content > form > section > div.box > div.footer div.check div.dele,
+body > div.container div.content > form > section > div.box > div.footer div.check div.infor {
+  font-size: 12px;
+  float: left;
+  margin-left: 20px;
+}
+body > div.container div.content > form > section > div.box > div.footer div.check div.infor_none {
+  display: none;
+  font-size: 12px;
+  vertical-align: middle;
+  margin-left: 20px;
+  float: left;
+}
+body > div.container div.content > form > section > div.box > div.footer div.clear {
+  float: right;
+  width: 100px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: #929292;
+  border-radius: 2px;
+  color: #f5f5f5;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 5px;
+  font-size: 12px;
+}
+body div.footer {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+}
+body div.footer div.footer-container1 {
+  height: 200px;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+body div.footer div.footer-container1::before {
+  content: "";
+  display: table;
+}
+body div.footer div.footer-container1 div.footer1 {
+  width: 1000px;
+  height: 85px;
+  margin: 50px auto;
+  margin-top: 50px;
+  background-color: #f5f5f5;
+}
+body div.footer div.footer-container1 div.footer1 > div {
+  float: left;
+  margin-top: 2px;
+  margin-left: 150px;
+}
+body div.footer div.footer-container1 div.footer1 > div p {
+  display: block;
+  margin-top: 0px;
+}
+body div.footer div.footer-container2 {
+  background-color: #fff;
+  width: 100%;
+}
+body div.footer div.footer-container2::before {
+  content: "";
+  display: table;
+}
+body div.footer div.footer-container2 div.footer2 {
+  width: 1200px;
+  height: 160px;
+  margin: 30px auto;
+}
+body div.footer div.footer-container2 div.footer2 div:first-child {
+  margin-top: 20px;
+  margin-left: 100px;
+  float: left;
+  width: 365px;
+  height: 120px;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(2) {
+  margin: 0 20px;
+  float: left;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(2) > ul {
+  float: left;
+  list-style: none;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(2) > ul a {
+  opacity: 0.6;
+  color: #111;
+  text-decoration: none;
+  font-size: 13px;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(2) > ul a:hover {
+  opacity: 1;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(3) {
+  float: left;
+  margin: 20px 20px;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(3) > p {
+  line-height: 8px;
+  font-size: 14px;
+}
+body div.footer div.footer-container2 div.footer2 div:nth-child(4) {
+  float: left;
+  margin: 30px 0px;
+}
+body div.footer div.footer-container2 div.footer2 div:last-child {
+  font-size: 13px;
+  line-height: 20px;
+  width: 600px;
+  margin: 0 auto;
+}

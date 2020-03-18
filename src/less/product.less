@@ -1,0 +1,226 @@
+//引入头部样式
+@import 'atcsLess/header.less';
+//引入footer楼层样式
+@import 'atcsLess/footer.less';
+//引入隐藏搜索样式
+@import 'atcsLess/hiden-header.less';
+//引入隐藏的登录对话框
+@import 'atcsLess/login-modal.less';
+
+
+
+
+.div () {
+    border: 1px solid red
+}
+
+li.focus {
+    background-color: #e5e5e5;
+}
+
+.modal {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.lf {
+    float: left;
+}
+
+.rg {
+    float: right;
+}
+
+.shelper {
+    //autocomplet的对话框
+    position: absolute;
+    width: 367px;
+    max-height: 200px;
+    overflow: hidden;
+    border: .5px solid #858585;
+    padding: 6px;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: .5px solid #858585;
+    border-top: none;
+
+    li {
+        max-width: 350px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        cursor: default;
+
+        &:hover {
+            background-color: #777;
+        }
+    }
+}
+
+
+// ****************************************************************************************************
+body {
+    background-color: #fbfbfb !important;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 1);
+    div.header {
+        
+        .header()
+    }
+    div.container{
+        width: 1000px;
+        margin: 0 auto;
+        min-height: 1000px;
+        div.box {
+            width: 100%;
+            position: relative;
+
+            >div.cont {
+                position: relative;
+                width: 100%;
+                //border: 1px solid #e8e8e8;
+                //border-right: 1px solid #e8e8e8;
+                margin-top: 10px;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+
+                >div.pudc {
+                    .lf;
+                    width: 410px;
+
+                    >div.pudc_information {
+                        width: 410px;
+                        height: 115px;
+
+                        img {
+                            .lf;
+                            margin-top: 15px;
+                            margin-left: 15px;
+                        }
+
+                        >span.des {
+                            display: block;
+                            .lf;
+                            width: 250px;
+                            margin-left: 15px;
+                            font-size: 12px;
+                            height: 60px;
+                            margin-top: 15px;
+                        }
+
+                        p {
+                            .lf;
+                            width: 250px;
+                            height: 30px;
+                            line-height: 40px;
+                            margin-left: 15px;
+                            font-size: 10px;
+                        }
+                    }
+
+                }
+
+                >div.pices {
+                    .lf;
+                    width: 200px;
+                    height: 115px;
+                    padding-top: 15px;
+                    box-sizing: border-box;
+
+                    p {
+                        width: 150px;
+                        text-align: center;
+                        font-size: 12px;
+                    }
+                }
+
+                >div.num {
+                    .lf;
+                    width: 200px;
+                    height: 115px;
+                    line-height: 115px;
+                    text-align: center;
+                    span{
+                        color: #df9e13;
+                        font-size: 14px;
+                    }
+
+                    input {
+                        width: 30px;
+                        height: 20px;
+                        text-align: center;
+                    }
+                }
+
+                >div.totle {
+                    .lf;
+                    width: 130px;
+                    text-align: center;
+                    padding-top: 15px;
+                    ul {
+                        li {
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                
+
+            }
+            >p {
+                width: 200px;
+                height: 25px;
+                border-radius: 3px;
+                background-color: #0c6ae6;
+                color: rgb(96, 238, 61);
+                text-align: center;
+                line-height: 25px;
+                font-size: 14px;
+            }
+            >div.box-modal{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 10;
+                background-color: rgba(0, 0, 0, 0);
+                &:hover{
+                    background-color: rgba(21, 150, 236, 0.3);
+                }
+
+            }
+
+        }
+    }
+
+    div.hiden-header {
+        .hiden-header()
+    }
+    div.login-modal{
+        .login-modal()
+    }
+    div.footer {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0);
+
+        div.footer-container1 {
+            .footer-container1();
+        }
+
+        div.footer-container2 {
+            .footer-container2();
+        }
+      
+    }
+}
