@@ -14,11 +14,12 @@ $(()=>{
     //密码格式正则表达式
     let preg = /^[\w]{6,12}$/;
     //用户名的验证
-    $('div.login-modal').on('blur', 'input[type=text]', e => {
+    $('div.login-table').on('blur', 'input[type=text]', e => {
         let $e = $(e.target),
         $val = $.trim($e.val())
 
         if($val !== '' && ureg.test($val)){
+            console.log(1)
             $e.siblings('div').data('type', 1).html('√用户名格式正确√')
                 .addClass('succ')
         } else if ($val == ''){
@@ -30,7 +31,7 @@ $(()=>{
         }
     })
     //密码的验证
-    $('div.login-modal').on('blur', 'input[type=password]', e => {
+    $('div.login-table').on('blur', 'input[type=password]', e => {
         let $e = $(e.target),
             $val = $.trim($e.val())
 
@@ -45,13 +46,13 @@ $(()=>{
         }
     })
     //得到焦点时移除相对应的提示
-    $('div.login-modal').on('focus', 'input:not([type=button])', e => {
+    $('div.login-table').on('focus', 'input:not([type=button])', e => {
         $(e.target).siblings('div').removeClass()
     })
 })
 //登录按钮单击登录
 $(()=>{
-    $('div.login-modal').on('click', 'input[type=button]', e => {
+    $('div.login-table').on('click', 'input[type=button]', e => {
         let $e = $(e.target),
         $type = $('div.user').children('div').data('type') +
             $('div.pwd').children('div').data('type')

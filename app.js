@@ -8,6 +8,9 @@ const cookieParser = require('cookie-parser')
 const indexRouter = require('./router/indexRouter.js')
 const productRouter = require('./router/productRouter.js')
 const cartRouter = require('./router/cartRouter.js')
+const orderRouter = require('./router/orderRouter.js')
+const fs = require('fs')
+const siteAddress = require('./address')
 
 const app = express()
 const server = http.createServer(app)
@@ -96,9 +99,32 @@ app.get('/login', (req, res) => {
 
 })
 
+
+//省市县三省联动请求数据
+app.get('/address', (req, res) =>{
+    let topId = req.query.topId,
+    arr = []
+    siteAddress.forEach(ele => {
+        if(ele.topid == topId){
+            arr.push(ele)
+        }
+    })
+    res.json(arr)
+})
+
 app.use('/index', indexRouter)//首页请求路由
-app.use('/product', productRouter)//商品查询的路由
+
+// app.use((req, res, next) => {//请求拦截重定向 
+//     if(req.session.uid == null){
+//         res.redirect('/html/login.html')    
+//     } else {
+//         next()
+//     }
+    
+// })
+app.use('/product', productRouter)//商品查询的路由    
 app.use('/cart', cartRouter) //购物车的路由
+app.use('/order', orderRouter)//订单的路由
 
 
 

@@ -313,13 +313,13 @@ body div.container div.content > div.addres > div.none_infor {
   border: 0.5px solid #09b8ee;
   border-top: 0;
   padding: 0;
+  display: none;
 }
 body div.container div.content > div.addres > div.none_infor::before {
   content: "";
   display: table;
 }
 body div.container div.content > div.addres > div.none_infor > div.show_infor {
-  display: none;
   margin-top: 10px;
   width: 100%;
   height: 40px;
